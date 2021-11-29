@@ -14,9 +14,6 @@
         content
     )
 
-    ; un-comment following line if constants are needed
-    ;(:constants )
-
     (:predicates
         (at-robot ?r - robot ?l - location)
         (at-person ?p - person ?l - location)
@@ -29,25 +26,21 @@
         (empty ?r - robot)
     )
 
-
-    (:functions ;todo: define numeric functions here
-    )
-
     (:action pick-up
         :parameters (?r - robot ?c - crate ?l - location)
         :precondition (and (at-robot ?r ?l) (at-crate ?c ?l) (empty ?r) (available ?c))
-        :effect (and (load ?r ?c) (not (empty ?r))) ; (not (at-crate ?c ?l))
+        :effect (and (load ?r ?c) (not (empty ?r)))
     )
     
     (:action move-crate
         :parameters (?r - robot ?c - crate ?l1 ?l2 - location)
         :precondition (and (at-robot ?r ?l1) (at-crate ?c ?l1) (load ?r ?c))
         :effect (and (at-robot ?r ?l2) (at-crate ?c ?l2) 
-                    (not (at-robot ?r ?l1)) (not (at-crate ?c ?l2)))
+                    (not (at-robot ?r ?l1)) (not (at-crate ?c ?l1)))
     )
     
     (:action move
-        :parameters (?r - robot ?l1 ?l2)
+        :parameters (?r - robot ?l1 ?l2 - location)
         :precondition (and (at-robot ?r ?l1))
         :effect (and (at-robot ?r ?l2) (not (at-robot ?r ?l1)))
     )
@@ -58,8 +51,6 @@
                         (load ?r ?c) (contain ?c ?co) (need ?p ?co))
         :effect (and (not (need ?p ?co)) (have ?p ?co) 
                     (not (load ?r ?c)) (empty ?r) (not (available ?c)))
-    )
-    
-    
+    )   
 
 )
