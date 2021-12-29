@@ -14,16 +14,18 @@
         content
     )
 
+    ; TODO: at-x can be modeled as a single predicate 'at'
+
     (:predicates
-        (at-robot ?r - robot ?l - location)
-        (at-person ?p - person ?l - location)
-        (at-crate ?c - crate ?l - location)
-        (contain ?c - crate ?co - content) ; assume contains only one content
-        (available ?c - crate)
-        (need ?p - person ?co - content) ; no need content already had
-        (have ?p - person ?co - content)
-        (load ?r - robot ?c - crate)
-        (empty ?r - robot)
+        (at-robot ?r - robot ?l - location)     ;robot r is at location l
+        (at-person ?p - person ?l - location)   ;person p is at location l
+        (at-crate ?c - crate ?l - location)     ;crate c is at location l
+        (contain ?c - crate ?co - content)      ;crate c have content co (TODO: assume contains only one content)
+        (available ?c - crate)                  ;crate c has not been delivered yet
+        (need ?p - person ?co - content)        ;person p needs content co (TODO: no need content already had)
+        (have ?p - person ?co - content)        ;person p has content co (TODO: can need co even if it has co?)
+        (load ?r - robot ?c - crate)            ;robot r loads crate c
+        (empty ?r - robot)                      ;robot r is empty
     )
 
     (:action pick-up
