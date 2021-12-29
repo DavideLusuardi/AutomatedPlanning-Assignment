@@ -19,7 +19,7 @@
         (at-person ?p - person ?l - location)
         (at-crate ?c - crate ?l - location)
         (contain ?c - crate ?co - content) ; assume contains only one content
-        (available ?c)
+        (available ?c - crate)
         (need ?p - person ?co - content) ; no need content already had
         (have ?p - person ?co - content)
         (load ?r - robot ?c - crate)
@@ -29,15 +29,14 @@
     (:action pick-up
         :parameters (?r - robot ?c - crate ?l - location)
         :precondition (and (at-robot ?r ?l) (at-crate ?c ?l) (empty ?r) (available ?c))
-        :effect (and (load ?r ?c) (not (empty ?r)))
+        :effect (and (load ?r ?c) (not (empty ?r)) (not (at-crate ?c ?l)))
     )
     
-    (:action move-crate
-        :parameters (?r - robot ?c - crate ?l1 ?l2 - location)
-        :precondition (and (at-robot ?r ?l1) (at-crate ?c ?l1) (load ?r ?c))
-        :effect (and (at-robot ?r ?l2) (at-crate ?c ?l2) 
-                    (not (at-robot ?r ?l1)) (not (at-crate ?c ?l1)))
-    )
+    ; (:action move-crate
+    ;     :parameters (?r - robot ?c - crate ?l1 ?l2 - location)
+    ;     :precondition (and (at-robot ?r ?l1) (load ?r ?c))
+    ;     :effect (and (at-robot ?r ?l2) (not (at-robot ?r ?l1)))
+    ; )
     
     (:action move
         :parameters (?r - robot ?l1 ?l2 - location)
@@ -47,9 +46,9 @@
 
     (:action deliver
         :parameters (?r - robot ?c - crate ?p - person ?l - location ?co - content)
-        :precondition (and (at-robot ?r ?l) (at-crate ?c ?l) (at-person ?p ?l) 
+        :precondition (and (at-robot ?r ?l) (at-person ?p ?l) 
                         (load ?r ?c) (contain ?c ?co) (need ?p ?co))
-        :effect (and (not (need ?p ?co)) (have ?p ?co) 
+        :effect (and (not (need ?p ?co)) (have ?p ?co) (at-crate ?c ?l)
                     (not (load ?r ?c)) (empty ?r) (not (available ?c)))
     )   
 

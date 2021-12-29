@@ -1,10 +1,9 @@
 ;Header and description
-;execution: enhsp-2020 --domain  assignment-domain2.pddl --problem  assignment-problem2.pddl
+;execution: enhsp-2020 --domain assignment-domain2.pddl --problem assignment-problem2.pddl
 
 (define (domain assignment2)
 
     ;remove requirements that are not needed
-    ; (:requirements :strips :fluents :durative-actions :timed-initial-literals :typing :conditional-effects :negative-preconditions :duration-inequalities :equality)
     (:requirements :strips)
 
     (:types
@@ -25,7 +24,7 @@
         (at-crate ?c - crate ?l - location)
         (at-carrier ?ca - carrier ?l - location)
         (contain ?c - crate ?co - content) ; assume contains only one content
-        (available ?c)
+        (available ?c - crate)
         (need ?p - person ?co - content) ; no need content already had
         (have ?p - person ?co - content)
         (load ?ca - carrier ?c - crate)
