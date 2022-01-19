@@ -1,3 +1,5 @@
+; Problem file for the Problem 1 of APTP Assignment
+
 (define (problem problem1) (:domain assignment1)
     (:objects 
         robot1 - robot
@@ -7,10 +9,12 @@
         medicine food beverage - content
     )
 
+    ; a single robotic agent is located at the depot
+    ; all crates are located at the depot
     (:init
         (robot_at robot1 depot) 
         (person_at p1 l1) (person_at p2 l2) (person_at p3 l3) (person_at p4 l3)
-        (crate_at c1 depot) (crate_at c2 depot) (crate_at c3 depot) (crate_at c4 depot) (crate_at c5 depot) ; (crate_at c6 depot) 
+        (crate_at c1 depot) (crate_at c2 depot) (crate_at c3 depot) (crate_at c4 depot) (crate_at c5 depot)
         (contain c1 medicine) (contain c2 food) (contain c3 beverage) (contain c4 medicine) (contain c5 food)
         (available c1) (available c2) (available c3) (available c4) (available c5)
         (need p1 food) (need p1 beverage)
@@ -20,12 +24,13 @@
         (empty robot1)
     )
 
+    ; people have crates containing what they need
     (:goal (and
         (have p1 food) (have p1 beverage)
         (have p3 medicine)
         (have p4 food)
     ))
 
-;un-comment the following line if metric is needed
-;(:metric minimize (???))
+    ; (:metric minimize (cost)) ; TODO
+
 )

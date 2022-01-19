@@ -1,3 +1,5 @@
+; Problem file for the Problem 2 of APTP Assignment
+
 (define (problem problem2) (:domain assignment2)
     (:objects 
         robot1 - robot
@@ -8,6 +10,7 @@
         carrier1 - carrier
     )
 
+    ; the robotic agent can load up to four crates onto a carrier
     (:init
         (robot_at robot1 depot) 
         (carrier_at carrier1 depot)
@@ -31,10 +34,9 @@
         (have p4 food)
         (have p5 medicine)
         (have p6 beverage)
-        ; (< (cost) 17)
+        (< (cost) 17)
     ))
 
-    ;un-comment the following line if metric is needed
     (:metric minimize (cost))
     ; min cost 16 
 )
