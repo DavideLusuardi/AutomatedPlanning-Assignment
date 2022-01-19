@@ -8,9 +8,9 @@
     )
 
     (:init
-        (at-robot robot1 depot) 
-        (at-person p1 l1) (at-person p2 l2) (at-person p3 l3) (at-person p4 l3)
-        (at-crate c1 depot) (at-crate c2 depot) (at-crate c3 depot) (at-crate c4 depot) (at-crate c5 depot) ; (at-crate c6 depot) 
+        (robot_at robot1 depot) 
+        (person_at p1 l1) (person_at p2 l2) (person_at p3 l3) (person_at p4 l3)
+        (crate_at c1 depot) (crate_at c2 depot) (crate_at c3 depot) (crate_at c4 depot) (crate_at c5 depot) ; (crate_at c6 depot) 
         (contain c1 medicine) (contain c2 food) (contain c3 beverage) (contain c4 medicine) (contain c5 food)
         (available c1) (available c2) (available c3) (available c4) (available c5)
         (need p1 food) (need p1 beverage)
