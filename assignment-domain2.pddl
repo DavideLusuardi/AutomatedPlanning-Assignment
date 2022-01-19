@@ -3,8 +3,7 @@
 
 (define (domain assignment2)
 
-    ;remove requirements that are not needed
-    (:requirements :strips)
+    (:requirements :strips :typing :numeric-fluents)
 
     (:types
         robot
@@ -14,9 +13,6 @@
         content
         carrier
     )
-
-    ; un-comment following line if constants are needed
-    ;(:constants )
 
     (:predicates
         (at-robot ?r - robot ?l - location)

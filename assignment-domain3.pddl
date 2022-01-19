@@ -5,7 +5,7 @@
 (define (domain assignment3)
 
     ;remove requirements that are not needed
-    (:requirements :strips :durative-actions)
+    (:requirements :strips :typing :numeric-fluents :negative-preconditions :durative-actions)
 
     (:types
         robot
