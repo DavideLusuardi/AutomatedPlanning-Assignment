@@ -14,15 +14,15 @@
     )
 
     (:predicates
-        (robot_at ?r - robot ?l - location) ;robot r is at location l
-        (person_at ?p - person ?l - location) ;person p is at location l
-        (crate_at ?c - crate ?l - location) ;crate c is at location l
-        (carrier_at ?ca - carrier ?l - location) ;carrier ca is at location l
-        (contain ?c - crate ?co - content) ;crate c has content co
-        (available ?c - crate) ;crate c has not been delivered yet
-        (need ?p - person ?co - content) ;person p needs content co
-        (have ?p - person ?co - content) ;person p has content co
-        (load ?ca - carrier ?c - crate) ;carrier ca loads crate c
+        (robot_at ?r - robot ?l - location)         ;robot r is at location l
+        (person_at ?p - person ?l - location)       ;person p is at location l
+        (crate_at ?c - crate ?l - location)         ;crate c is at location l
+        (carrier_at ?ca - carrier ?l - location)    ;carrier ca is at location l
+        (contain ?c - crate ?co - content)          ;crate c has content co
+        (available ?c - crate)                      ;crate c has not been delivered yet
+        (need ?p - person ?co - content)            ;person p needs content co
+        (have ?p - person ?co - content)            ;person p has content co
+        (load ?ca - carrier ?c - crate)             ;carrier ca loads crate c
     )
 
 

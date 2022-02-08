@@ -31,6 +31,4 @@
         (have p4 food)
     ))
 
-    ; (:metric minimize (cost)) ; TODO
-
 )

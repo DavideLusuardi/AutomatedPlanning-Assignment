@@ -1,0 +1,81 @@
+
+\section{Design Choices}
+\label{sec3}
+
+In this section we discuss some design choices and some assumptions that have been made 
+analyzing the scenario and the different subproblems: further assumptions are required 
+in order to define better the proposed problem.
+% during the implementation of the PDDL domain and problem files.
+
+% We can start 
+
+Each crate can have just one content.
+Each person can initially have some crates or none.
+Each person can need some emergency supplies of specific content, or can need nothing.
+We assume that the need of person of a specific content can be satisfied through the delivering 
+to it of just one crate having that content (e.g. if Mario needs food, just one crate containing
+food is sufficient, no more).
+For this reason, the problem file should be defined in a way that does not introduce any form of inconsistency.
+For example, we could have that Mario already have a crate containing food but at the same time he needs food.
+
+We assume that a crate already delivered is no more available (TODO), even if it is redundant.
+
+
+Initially, we need to consider the main object types used in the proposed scenario.
+We can simply spot the following types: robot, person, crate, location, content, 
+and, from the Problem 2 on, the assignment introduces the concept of carrier.
+Each type can be easily understood without further explanations. 
+We can note... TODO
+
+We can now start describing the predicates.
+% TODO
+
+\subsection{Problem 1}
+In order to model the location of robotic agents, people and crates, appropriates predicates should be defined.
+We could simply use just one predicate to express objects location, but we preferred to define a predicate for 
+each type of objects to improve clarity. In this way, we have defined the predicates 
+\texttt{(robot\_at ?r - robot ?l - location)}, \texttt{(person\_at ?p - person ?l - location)} and 
+\texttt{(crate\_at ?c - crate ?l - location)}.
+
+
+
+As we have said, people need specific emergency supplies. To model this fact, the predicate
+\texttt{(need ?p - person ?co - content)} has been defined. The predicate 
+\texttt{(have ?p - person ?co - content)} is used to define that a person has a crate with that content.
+In order to know if a crate has already been delivered, the predicate \texttt{(available ?c - crate)}
+is used: we assume that when a crate is delivered is no more available to be picked up or moved.
+TODO: non assumere ciò sarebbe inutile
+
+
+To model that a robot can be empty or can hold a crate, the predicates \texttt{(empty ?r - robot)} and
+\texttt{(hold ?r - robot ?c - crate)} are respectively used.
+We note that the predicate \texttt{empty} is not strictly required but it is useful to simplify the modeling
+and increase efficiency of the planner.
+
+
+
+
+We can now start describing the actions. Three different actions have been modeled: \texttt{pick\_up}, 
+\texttt{move} and \texttt{deliver}.
+
+The action \texttt{pick\_up}, as the name suggests, models the robot that picks up a crate:
+the robot and the crate should be at the same location, the robot should be empty and the crate available.
+
+The action \texttt{move} indicates the movement of the robot from one location to another.
+
+The action \texttt{deliver} indicates the delivering of a crate to a person: the person should need emergency
+supplies of the same type of the content of the crate, the robot holds the crate and it is at the same location
+of the person.
+
+
+From Problem 2 on, the introduction of the carrier, poses the need to change a bit the model 
+introducing the \texttt{carrier} type and the \texttt{(carrier\_at ?ca - carrier ?l - location)} predicate.
+Instead, the predicates \texttt{hold} and \texttt{empty} have been removed in favor of the predicate
+\texttt{(load ?ca - carrier ?c - crate)} which indicates that the crate is loaded into the carrier.
+In order to model the variable capacity of the carriers, the function \texttt{(capacity ?ca - carrier) - number}
+has been defined: the function is used to check to remaining capacity of a carrier before load a crate.
+The action \texttt{move\_carrier} has also been added and indicates the robot that moves a carrier.
+
+In Problem 3, the actions have been transformed in durative actions, specifying appropriate durations.
+A new predicate \texttt{(busy ?r - robot)} has been added in order to model which actions can be executed 
+in parallel. 

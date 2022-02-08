@@ -1,0 +1,122 @@
+
+\section{Design Choices}
+In this section, we present the DTI-funded collaborative project \textit{iview} \cite{iview_project},
+a free-viewpoint video system which enables the production of novel desirable camera views.
+This system exploits the already placed live TV broadcast cameras as the primary
+source of multiple view video.
+Usually, soccer matches are covered by 12-20 high-definition cameras placed all over in the stadium
+providing wide-baseline views.
+Match cameras are manually controlled to follow the game play zooming in on events.
+However, only a fraction of these are focused on specific events of interest and can be used for production 
+of free-viewpoint renders, the remaining cameras cover the pitch, crowd and coaches.
+
+
+% Robust algorithms are required for both recovery of camera
+% calibration from the broadcast footage and wide-baseline correspondence between
+% views for reconstruction or view interpolation.
+
+% Therefore
+% iview uses a method for real-time camera calibration from the match footage [2:46].
+% Player segmentation is performed using chroma-key and difference matting tech-
+% niques independently for each camera view [2:15]. Automatic calibration and player
+% segmentation for moving broadcast cameras results in errors of the order of 1-3
+% pixels which is often comparable to the size of players arms and legs in the broad-
+% cast footage. Robust reconstruction and rendering of novel viewpoints is achieved in
+% the iview system by an initial conservative visual-hull reconstruction followed by a
+% view-dependent refinement. View-dependent refinement simultaneously refines the
+% player reconstruction and segmentation exploiting visual cues from multiple cam-
+% era views. This achieves free-viewpoint rendering with pixel accurate alignment of
+% neighbouring views to render novel views with a visual quality approaching that
+% of the source video.
+
+% Advances are presented in real-time through the
+% lens camera calibration to estimate both the camera pose, focus and lens distortion
+% from the pitch marks.
+
+% Free-viewpoint video is then produced starting with a volu-
+% metric reconstruction followed by a view-dependent refinement using information
+% from multiple views.
+
+% Automatic online calibration, segmentation and reconstruction is performed to allow
+% rendering of novel viewpoints from the moving match cameras.
+
+\begin{figure}[htbp]
+\centerline{\includegraphics[scale=0.078]{iview_overview2.png}}
+\caption{Overview of the \textit{iview} free-viewpoint video system \cite{02_iview}.}
+\label{fig:iview_overview}
+\end{figure}
+
+
+The \textit{iview} system is composed of three main modules as shown in Figure \ref{fig:iview_overview}: 
+capture, processing and replay module.
+
+Capture is performed using time synchronised acquisition from both auxiliary and
+match cameras.
+The minimal number of cameras is about four, but for good quality results a higher number is required.
+Camera synchronisation is achieved using standard genlock process.
+
+The processing module computes a 3D model of the scene.
+This is done using segmentation of objects from the background and 3D reconstruction \cite{2.1_iview}.
+
+To allow the use of footage from match cameras and to avoid the need for prior calibration, 
+automatic calibration of all cameras is performed using a line-based approach against the pitch lines of the captured footage, 
+achieving a root-mean-square error of 1-2 pixels for moving cameras. 
+The calibration is very fast and robust, capable of real-time operation for use during live match footage. 
+Calibration estimates the extrinsic and intrinsic parameters of each camera including lens distortion.
+
+The segmentation is needed to separate the foreground, i.e., the players, from the background.
+Matting of players from the green pitch is performed using chroma-keying matting. 
+% This allows the approximate segmentation of the foreground players for subsequent processing to produce free-viewpoint video. 
+The authors developed and tested a k-nearest neighbour approach for chroma-keying and evaluated two other known techniques,
+\textit{Fast green subtraction} in RGB colour space and keying in HSV colour space.
+The k-nearest neighbour classifier is controlled by a GUI where the user has to click on position in the image that corresponds
+to the background. 
+The process is repeated until the resulting segmentation is satisfying.
+A deeper explanation is present in the paper \cite{2.1_iview} where the authors present and evaluate also 
+\textit{Fast green subtraction} and keying in HSV.
+
+The accumulation of errors from calibration and matting can cause large errors in
+the reconstruction of the scene, such as loss of limbs. 
+Therefore, robust algorithms have been developed for scene reconstruction.
+One possible technique is called visual-hull (VH) and represents the maximum volume occupied by an object
+given a set of silhouettes from multiple views \cite{2.2_iview_08}.
+The visual-hull is a single global representation integrating silhouette information from all
+views. A polygonal mesh surface is typically extracted and texture mapped by resampling
+the captured multiple view video for rendering \cite{2.2_iview}.
+Due to accumulating errors in camera calibration and segmentation, visual-hull accuracy is reduced.
+A refinement of the view-dependent visual hull (VDVH) \cite{2.1_iview_12},
+using stereo correspondence to interpolate between captured
+views, can be used to overcome these issues, achieving the best alignment between adjacent views and 
+hence improving visual quality.
+More information about \textit{iview} 3D reconstruction can be found in \cite{02_iview,2.1_iview,2.2_iview}.
+
+Finally, the replay module renders the novel view of the scene using the computed 3D model together with the
+original camera images.
+Cameras closer to the virtual viewpoint are chosen to generate the novel viewpoint.
+% TODO: può essere descritto maggiormente the replay module 
+
+
+The method proposed achieves an image quality comparable to that of the input images and it is robust to the
+wide-baseline moving camera views at different resolutions.
+Calibration and segmentation are very important in order to obtain an overall good quality of the system.
+Degradation in image quality will also occur if there are insufficient views for reconstruction.
+% TODO: si può aggiungere contenuto
+
+% Aperture correction is also applied to each video sequence to correct for the camera edge enhancement
+% used in standard broadcast footage \cite{iview}.
+
+% Likewise matting in relatively uncontrolled outdoor conditions with changing illu-
+% mination achieves a segmentation within 1-2 pixels of the true foreground with the
+% addition of background clutter for the crowd, hoardings and on-pitch advertising.
+
+
+
+
+
+% The replay module renders the captured scene in realtime
+% using the computed 3D model and the original camera images
+% deploying view-dependent texture mapping [8].
+% The entire system can potentially operate in real-time. At
+% the current stage the processing is done offline. That means
+% the images are stored and the processing is run at a later stage.
+% The replay module is designed to work at interactive rates.

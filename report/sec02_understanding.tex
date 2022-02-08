@@ -1,0 +1,47 @@
+
+\section{Understanding of the problem}
+\label{sec2}
+
+The assignment proposes four subproblems within the same scenario, each building on the previous one.
+
+The proposed scenario consists of an emergency situation in which there are a number of injured people 
+who need emergency supplies.
+% to help delivering them some crates containing
+Each injured person is located in a specific place and may need some kinds of emergency supply
+(e.g. food, medicine, beverage, ...).
+Each crate is at a specific location and contains just one specific kind of emergency supply.
+Some people may already have some crates and some others may not need any crate.
+People don't care which crate exactly they get, only the content type is important.
+There can be one or more robotic agents that cooperate in order to deliver crates to people.
+Each location is connected to every other location, so the robotic agent can move directly between them.
+Initially, the robotic agents and the crates are situated at the depot, where there are not injured people.
+
+The above considerations are common for all the four subproblems that we are going to discuss.
+
+\subsection{Problem 1}
+This is the easier problem.
+We have that a single robotic agent is present at the depot.
+It can perform the following actions: pick up and load just one crate if it is at the same location;
+move to another location, moving also the loaded crate if present; 
+deliver the loaded crate to a person that is at the same location of the robot.
+
+\subsection{Problem 2}
+In this subproblem, the robotic agent can move crates in an different way.
+We introduce the concept of carrier that can be loaded with up to a specific number of crates. 
+This number is problem specific and is modeled in the problem file.
+The robotic agent loads the carrier and moves it. 
+At the location of the robot, it can load some crates on the carrier or deliver some others to people.
+
+The difficult part consists in modeling correctly the carrier and its variable capacity.
+
+\subsection{Problem 3}
+In this subproblem, it's required to make use of durative actions
+% , assigning them reasonable durations 
+% and the possibility to execute them in parallel.
+Reasonable durations should be assigned to actions coherently with their time spans.
+The possibility to execute actions in parallel should be analyzed taking into account real constraints.
+
+\subsection{Problem 4}
+Problem 3 has been integrated within the PlanSys2 infrastructure.
+% TODO: spiegare meglio
+
