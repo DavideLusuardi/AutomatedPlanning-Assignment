@@ -6,6 +6,7 @@
 ## run
 problem 1:
 $ lama assignment-domain1.pddl assignment-problem1.pddl
+$ downward --alias lama-first assignment-domain1.pddl assignment-problem1a.pddl
 
 problem 2:
 $ enhsp-2020 --domain assignment-domain2.pddl --problem assignment-problem2.pddl

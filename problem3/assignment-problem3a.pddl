@@ -13,6 +13,7 @@
     ; the robotic agent can load up to four crates onto a carrier
     (:init
         (robot_at robot1 depot)
+        (free robot1)
         (carrier_at carrier1 depot)
         (person_at p1 l1) (person_at p2 l1) (person_at p3 l1) (person_at p4 l2) (person_at p5 l2) (person_at p6 l3)
         (crate_at c1 depot) (crate_at c2 depot) (crate_at c3 depot) (crate_at c4 depot) (crate_at c5 depot) (crate_at c6 depot) 
@@ -25,7 +26,6 @@
         (need p6 beverage)
         (have p1 medicine) (have p2 food) (have p3 beverage)
         (= (capacity carrier1) 4)
-        (free robot1)
     )
 
     (:goal (and

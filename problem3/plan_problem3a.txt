@@ -1,0 +1,21 @@
+; Plan found with metric 34.015
+; Theoretical reachable cost 34.016
+; States evaluated so far: 6476
+; States pruned based on pre-heuristic cost lower bound: 0
+; Time 4.30
+0.000: (pick_up robot1 carrier1 c1 depot)  [2.000]
+2.001: (pick_up robot1 carrier1 c3 depot)  [2.000]
+4.002: (pick_up robot1 carrier1 c2 depot)  [2.000]
+6.003: (move_carrier robot1 carrier1 depot l2)  [4.000]
+10.004: (deliver robot1 carrier1 c1 p5 l2 medicine)  [1.000]
+11.005: (deliver robot1 carrier1 c2 p4 l2 food)  [1.000]
+12.006: (move_carrier robot1 carrier1 l2 depot)  [4.000]
+16.007: (pick_up robot1 carrier1 c5 depot)  [2.000]
+18.008: (pick_up robot1 carrier1 c4 depot)  [2.000]
+20.009: (pick_up robot1 carrier1 c6 depot)  [2.000]
+22.010: (move_carrier robot1 carrier1 depot l3)  [4.000]
+26.011: (deliver robot1 carrier1 c6 p6 l3 beverage)  [1.000]
+27.012: (move_carrier robot1 carrier1 l3 l1)  [4.000]
+31.013: (deliver robot1 carrier1 c4 p3 l1 medicine)  [1.000]
+32.014: (deliver robot1 carrier1 c5 p1 l1 food)  [1.000]
+33.015: (deliver robot1 carrier1 c3 p1 l1 beverage)  [1.000]

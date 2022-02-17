@@ -3,5 +3,39 @@
 In this section, we present and analyze the obtained results regarding the execution of the planners on 
 the PDDL files.
 
-\subsection{Problem1}
+The submitted archive contains the solution to the presented problems and it is organized as follows.
+We have created four folders, one for each problem, that contain the PDDL domain file and one ore more 
+PDDL problem files. For each problem file it is reported in a separate file the plan found by the planner.
+% For each problem there is a folder that contains the PDDL domain file and one ore more PDDL problem files.
+% the plan obtained running the planner on each problem file is reported in 
 
+
+\subsection{Problem1}
+For this problem, we have modeled two PDDL problem files with increasing complexity.
+The planner used to found the solution is \texttt{Downward} using the option \texttt{--alias lama-first}.
+
+In the first problem modeled, there are 4 people, 5 crates, 4 locations and the planner successfully
+found an optimal solution that requires the execution of 15 actions.
+
+The second problem modeled is a bit more complex: the number of objects modeled increase to 8 people, 
+8 crates and 5 locations. Also in this case, the planner successfully
+found an optimal solution that requires the execution of 27 actions.
+
+
+\subsection{Problem2}
+For this problem, the planner used is \texttt{Enhsp-2020} that is contained in \texttt{Planutils}.
+
+The modeled PDDL problem contains 6 people, 6 crates, 4 locations and just one carrier with capacity 4.
+Executing the planner with option \texttt{-anytime}, it managed to find an optimal solution that 
+requires performing 16 actions.
+
+\subsection{Problem3}
+For this problem, the planner used is \texttt{Optic} that is contained in \texttt{Planutils}.
+
+It has been decided to model two PDDL problem files.
+In the second one, there are two robots and two carriers while in the first one only one of both.
+In this way, as previously explained, only in the second problem the actions can be perfomed in parallel.
+
+The planner managed to find a plan of duration 34 seconds for for the first problem and a plan of
+duration 24 seconds for the second one.
+As can be seen in the second plan, some actions are performed simultaneously as desirable.

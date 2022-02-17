@@ -163,12 +163,12 @@ INPUT /home/davide/Documents/UniTN/AIS/Automated Planning/AutomatedPlanning-Assi
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/courier/pcrr7t.tfm
 INPUT /home/davide/Documents/UniTN/AIS/Automated Planning/AutomatedPlanning-Assignment/report/sec04_results.tex
 INPUT /home/davide/Documents/UniTN/AIS/Automated Planning/AutomatedPlanning-Assignment/report/sec04_results.tex
-INPUT /home/davide/Documents/UniTN/AIS/Automated Planning/AutomatedPlanning-Assignment/report/sec05_conclusions.tex
-INPUT /home/davide/Documents/UniTN/AIS/Automated Planning/AutomatedPlanning-Assignment/report/sec05_conclusions.tex
-INPUT /home/davide/Documents/UniTN/AIS/Automated Planning/AutomatedPlanning-Assignment/report/old1.tex
-INPUT /home/davide/Documents/UniTN/AIS/Automated Planning/AutomatedPlanning-Assignment/report/old1.tex
 INPUT /usr/share/texlive/texmf-dist/fonts/vf/adobe/courier/pcrr7t.vf
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/courier/pcrr8r.tfm
+INPUT /home/davide/Documents/UniTN/AIS/Automated Planning/AutomatedPlanning-Assignment/report/sec05_conclusions.tex
+INPUT /home/davide/Documents/UniTN/AIS/Automated Planning/AutomatedPlanning-Assignment/report/sec05_conclusions.tex
+INPUT /home/davide/Documents/UniTN/AIS/Automated Planning/AutomatedPlanning-Assignment/report/old1.tex
+INPUT /home/davide/Documents/UniTN/AIS/Automated Planning/AutomatedPlanning-Assignment/report/old1.tex
 INPUT /home/davide/Documents/UniTN/AIS/Automated Planning/AutomatedPlanning-Assignment/report/old2.tex
 INPUT /home/davide/Documents/UniTN/AIS/Automated Planning/AutomatedPlanning-Assignment/report/old2.tex
 INPUT /home/davide/Documents/UniTN/AIS/Automated Planning/AutomatedPlanning-Assignment/report/old3.tex
@@ -176,14 +176,14 @@ INPUT /home/davide/Documents/UniTN/AIS/Automated Planning/AutomatedPlanning-Assi
 INPUT /home/davide/Documents/UniTN/AIS/Automated Planning/AutomatedPlanning-Assignment/report/./images/iview_overview2.png
 INPUT ./images/iview_overview2.png
 INPUT ./images/iview_overview2.png
-INPUT /usr/share/texlive/texmf-dist/fonts/vf/adobe/times/ptmr7t.vf
-INPUT /usr/share/texlive/texmf-dist/fonts/vf/adobe/times/ptmri7t.vf
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmri8r.tfm
 INPUT /home/davide/Documents/UniTN/AIS/Automated Planning/AutomatedPlanning-Assignment/report/old4.tex
 INPUT /home/davide/Documents/UniTN/AIS/Automated Planning/AutomatedPlanning-Assignment/report/old4.tex
 INPUT /home/davide/Documents/UniTN/AIS/Automated Planning/AutomatedPlanning-Assignment/report/./images/plane_sweeping2.png
 INPUT ./images/plane_sweeping2.png
 INPUT ./images/plane_sweeping2.png
+INPUT /usr/share/texlive/texmf-dist/fonts/vf/adobe/times/ptmr7t.vf
+INPUT /usr/share/texlive/texmf-dist/fonts/vf/adobe/times/ptmri7t.vf
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmri8r.tfm
 INPUT /home/davide/Documents/UniTN/AIS/Automated Planning/AutomatedPlanning-Assignment/report/old5.tex
 INPUT /home/davide/Documents/UniTN/AIS/Automated Planning/AutomatedPlanning-Assignment/report/old5.tex
 INPUT /home/davide/Documents/UniTN/AIS/Automated Planning/AutomatedPlanning-Assignment/report/./images/billboard_comparison.png

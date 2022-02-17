@@ -37,6 +37,4 @@
         (have p5 food) (have p5 medicine) (have p5 beverage)
     ))
 
-    (:metric minimize (cost))
-
 )
