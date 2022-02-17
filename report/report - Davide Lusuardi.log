@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2021.8.19)  8 FEB 2022 17:10
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2021.8.19)  17 FEB 2022 10:00
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -416,29 +416,27 @@ LaTeX Warning: Reference `TODO' on page 1 undefined on input line 27.
 
 
 ]) (/home/davide/Documents/UniTN/AIS/Automated Planning/AutomatedPlanning-Assignment/report/sec03_design_choices.tex
-Underfull \hbox (badness 1515) in paragraph at lines 34--39
+Underfull \hbox (badness 1515) in paragraph at lines 36--41
 \OT1/ptm/m/n/10 could sim-ply use just one pred-i-cate to ex-press ob-jects
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 34--39
+Underfull \hbox (badness 10000) in paragraph at lines 36--41
 \OT1/ptm/m/n/10 de-fined the pred-i-cates \OT1/pcr/m/n/10 (robot_at ?r - robot ?l
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 34--39
+Underfull \hbox (badness 10000) in paragraph at lines 36--41
 \OT1/pcr/m/n/10 - location)\OT1/ptm/m/n/10 , \OT1/pcr/m/n/10 (person_at ?p - person ?l -
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 34--39
+Underfull \hbox (badness 10000) in paragraph at lines 36--41
 \OT1/pcr/m/n/10 location) \OT1/ptm/m/n/10 and \OT1/pcr/m/n/10 (crate_at ?c - crate ?l -
  []
 
-Missing character: There is no Ã in font ptmr7t!
-Missing character: There is no ² in font ptmr7t!
 
-Underfull \hbox (badness 1735) in paragraph at lines 71--78
+Underfull \hbox (badness 1735) in paragraph at lines 71--81
 []\OT1/ptm/m/n/10 From Prob-lem 2 on, the in-tro-duc-tion of the car-rier,
  []
 
@@ -461,13 +459,13 @@ File: ./images/plane_sweeping2.png Graphic file (type png)
 <use ./images/plane_sweeping2.png>
 Package pdftex.def Info: ./images/plane_sweeping2.png  used on input line 10.
 (pdftex.def)             Requested size: 527.36758pt x 125.74437pt.
-) (/home/davide/Documents/UniTN/AIS/Automated Planning/AutomatedPlanning-Assignment/report/old5.tex
-<./images/billboard_comparison.png, id=22, 1114.1625pt x 807.015pt>
+) (/home/davide/Documents/UniTN/AIS/Automated Planning/AutomatedPlanning-Assignment/report/old5.tex [4]
+<./images/billboard_comparison.png, id=25, 1114.1625pt x 807.015pt>
 File: ./images/billboard_comparison.png Graphic file (type png)
 <use ./images/billboard_comparison.png>
 Package pdftex.def Info: ./images/billboard_comparison.png  used on input line 12.
 (pdftex.def)             Requested size: 245.1165pt x 177.54384pt.
- [4]) (/home/davide/Documents/UniTN/AIS/Automated Planning/AutomatedPlanning-Assignment/report/sec06_conclusion.tex) (/home/davide/Documents/UniTN/AIS/Automated Planning/AutomatedPlanning-Assignment/report/report - Davide Lusuardi.bbl
+) (/home/davide/Documents/UniTN/AIS/Automated Planning/AutomatedPlanning-Assignment/report/sec06_conclusion.tex) (/home/davide/Documents/UniTN/AIS/Automated Planning/AutomatedPlanning-Assignment/report/report - Davide Lusuardi.bbl
 LaTeX Font Info:    Try loading font information for U+msa on input line 47.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
@@ -475,7 +473,7 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 LaTeX Font Info:    Try loading font information for U+msb on input line 47.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-))
+) [5 <./images/plane_sweeping2.png> <./images/billboard_comparison.png>])
 
 ** Conference Paper **
 Before submitting the final camera ready copy, remember to:
@@ -487,7 +485,9 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[5 <./images/plane_sweeping2.png> <./images/billboard_comparison.png>] (/home/davide/Documents/UniTN/AIS/Automated Planning/AutomatedPlanning-Assignment/report/report - Davide Lusuardi.aux)
+[6
+
+] (/home/davide/Documents/UniTN/AIS/Automated Planning/AutomatedPlanning-Assignment/report/report - Davide Lusuardi.aux)
 
 LaTeX Warning: There were undefined references.
 
@@ -495,16 +495,16 @@ LaTeX Warning: There were undefined references.
 Here is how much of TeX's memory you used:
  5021 strings out of 492982
  75449 string characters out of 6134896
- 146719 words of memory out of 5000000
+ 147719 words of memory out of 5000000
  8454 multiletter control sequences out of 15000+600000
  40025 words of font info for 83 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  41i,8n,35p,381b,363s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/urw/courier/ucrb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on "/home/davide/Documents/UniTN/AIS/Automated Planning/AutomatedPlanning-Assignment/report/report - Davide Lusuardi.pdf" (5 pages, 4804302 bytes).
+Output written on "/home/davide/Documents/UniTN/AIS/Automated Planning/AutomatedPlanning-Assignment/report/report - Davide Lusuardi.pdf" (6 pages, 4805502 bytes).
 PDF statistics:
- 52 PDF objects out of 1000 (max. 8388607)
- 32 compressed objects within 1 object stream
+ 55 PDF objects out of 1000 (max. 8388607)
+ 34 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  16 words of extra memory for PDF output out of 10000 (max. 10000000)
 
