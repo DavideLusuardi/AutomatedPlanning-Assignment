@@ -1,0 +1,32 @@
+[0.052s] Invoking command in '/home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/build/assignment': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/build/assignment -- -j4 -l4
+[0.322s] [ 25%] Built target move_carrier_action_node
+[0.339s] [ 50%] Built target pick_up_action_node
+[0.353s] [ 75%] Built target move_action_node
+[0.387s] [100%] Built target deliver_action_node
+[0.421s] Invoked command in '/home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/build/assignment' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/build/assignment -- -j4 -l4
+[0.588s] Invoking command in '/home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/build/assignment': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/build/assignment
+[0.612s] -- Install configuration: ""
+[0.613s] -- Execute custom install script
+[0.614s] -- Up-to-date symlink: /home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/install/assignment/share/assignment/launch/assignment_launch.py
+[0.614s] -- Up-to-date symlink: /home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/install/assignment/share/assignment/pddl/assignment-domain3.pddl
+[0.615s] -- Up-to-date symlink: /home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/install/assignment/lib/assignment/deliver_action_node
+[0.615s] -- Up-to-date symlink: /home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/install/assignment/lib/assignment/move_action_node
+[0.616s] -- Up-to-date symlink: /home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/install/assignment/lib/assignment/move_carrier_action_node
+[0.616s] -- Up-to-date symlink: /home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/install/assignment/lib/assignment/pick_up_action_node
+[0.617s] -- Up-to-date symlink: /home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/install/assignment/share/ament_index/resource_index/package_run_dependencies/assignment
+[0.617s] -- Up-to-date symlink: /home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/install/assignment/share/ament_index/resource_index/parent_prefix_path/assignment
+[0.619s] -- Up-to-date symlink: /home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/install/assignment/share/assignment/environment/ament_prefix_path.sh
+[0.619s] -- Up-to-date symlink: /home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/install/assignment/share/assignment/environment/ament_prefix_path.dsv
+[0.620s] -- Up-to-date symlink: /home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/install/assignment/share/assignment/environment/path.sh
+[0.621s] -- Up-to-date symlink: /home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/install/assignment/share/assignment/environment/path.dsv
+[0.622s] -- Up-to-date symlink: /home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/install/assignment/share/assignment/local_setup.bash
+[0.624s] -- Up-to-date symlink: /home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/install/assignment/share/assignment/local_setup.sh
+[0.625s] -- Up-to-date symlink: /home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/install/assignment/share/assignment/local_setup.zsh
+[0.626s] -- Up-to-date symlink: /home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/install/assignment/share/assignment/local_setup.dsv
+[0.627s] -- Symlinking: /home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/install/assignment/share/assignment/package.dsv
+[0.652s] -- Up-to-date symlink: /home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/install/assignment/share/ament_index/resource_index/packages/assignment
+[0.653s] -- Up-to-date symlink: /home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/install/assignment/share/assignment/cmake/ament_cmake_export_dependencies-extras.cmake
+[0.654s] -- Up-to-date symlink: /home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/install/assignment/share/assignment/cmake/assignmentConfig.cmake
+[0.655s] -- Up-to-date symlink: /home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/install/assignment/share/assignment/cmake/assignmentConfig-version.cmake
+[0.656s] -- Up-to-date symlink: /home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/install/assignment/share/assignment/package.xml
+[0.662s] Invoked command in '/home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/build/assignment' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/build/assignment

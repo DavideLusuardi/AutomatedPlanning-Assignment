@@ -1,0 +1,28 @@
+[ 25%] Built target deliver_action_node
+[ 50%] Built target move_action_node
+[ 87%] Built target move_carrier_action_node
+[100%] Built target pick_up_action_node
+-- Install configuration: ""
+-- Execute custom install script
+-- Up-to-date symlink: /home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/install/assignment/share/assignment/launch/assignment_launch.py
+-- Up-to-date symlink: /home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/install/assignment/share/assignment/pddl/assignment-domain3.pddl
+-- Up-to-date symlink: /home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/install/assignment/lib/assignment/deliver_action_node
+-- Up-to-date symlink: /home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/install/assignment/lib/assignment/move_action_node
+-- Up-to-date symlink: /home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/install/assignment/lib/assignment/move_carrier_action_node
+-- Up-to-date symlink: /home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/install/assignment/lib/assignment/pick_up_action_node
+-- Up-to-date symlink: /home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/install/assignment/share/ament_index/resource_index/package_run_dependencies/assignment
+-- Up-to-date symlink: /home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/install/assignment/share/ament_index/resource_index/parent_prefix_path/assignment
+-- Up-to-date symlink: /home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/install/assignment/share/assignment/environment/ament_prefix_path.sh
+-- Up-to-date symlink: /home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/install/assignment/share/assignment/environment/ament_prefix_path.dsv
+-- Up-to-date symlink: /home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/install/assignment/share/assignment/environment/path.sh
+-- Up-to-date symlink: /home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/install/assignment/share/assignment/environment/path.dsv
+-- Up-to-date symlink: /home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/install/assignment/share/assignment/local_setup.bash
+-- Up-to-date symlink: /home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/install/assignment/share/assignment/local_setup.sh
+-- Up-to-date symlink: /home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/install/assignment/share/assignment/local_setup.zsh
+-- Up-to-date symlink: /home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/install/assignment/share/assignment/local_setup.dsv
+-- Symlinking: /home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/install/assignment/share/assignment/package.dsv
+-- Up-to-date symlink: /home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/install/assignment/share/ament_index/resource_index/packages/assignment
+-- Up-to-date symlink: /home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/install/assignment/share/assignment/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Up-to-date symlink: /home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/install/assignment/share/assignment/cmake/assignmentConfig.cmake
+-- Up-to-date symlink: /home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/install/assignment/share/assignment/cmake/assignmentConfig-version.cmake
+-- Up-to-date symlink: /home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/install/assignment/share/assignment/package.xml

@@ -1,0 +1,13 @@
+/home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/build/assignment/CMakeFiles/install/local.dir
+/home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/build/assignment/CMakeFiles/install.dir
+/home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/build/assignment/CMakeFiles/list_install_components.dir
+/home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/build/assignment/CMakeFiles/rebuild_cache.dir
+/home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/build/assignment/CMakeFiles/edit_cache.dir
+/home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/build/assignment/CMakeFiles/test.dir
+/home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/build/assignment/CMakeFiles/move_carrier_action_node.dir
+/home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/build/assignment/CMakeFiles/install/strip.dir
+/home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/build/assignment/CMakeFiles/deliver_action_node.dir
+/home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/build/assignment/CMakeFiles/move_action_node.dir
+/home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/build/assignment/CMakeFiles/assignment_uninstall.dir
+/home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/build/assignment/CMakeFiles/pick_up_action_node.dir
+/home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/build/assignment/CMakeFiles/uninstall.dir

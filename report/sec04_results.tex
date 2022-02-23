@@ -3,14 +3,16 @@
 In this section, we present and analyze the obtained results regarding the execution of the planners on 
 the PDDL files.
 
-The submitted archive contains the solution to the presented problems and it is organized as follows.
-We have created four folders, one for each problem, that contain the PDDL domain file and one ore more 
+The submitted archive contains the solutions to the presented problems and it is organized as follows.
+We have created four folders, one for each problem, that contain the PDDL domain files and one ore more 
 PDDL problem files. For each problem file it is reported in a separate file the plan found by the planner.
+For Problem 4, there is a folder that contains all the code required to execute the \texttt{PlanSys2} 
+problem.
 % For each problem there is a folder that contains the PDDL domain file and one ore more PDDL problem files.
 % the plan obtained running the planner on each problem file is reported in 
 
 
-\subsection{Problem1}
+\subsection{Problem 1}
 For this problem, we have modeled two PDDL problem files with increasing complexity.
 The planner used to found the solution is \texttt{Downward} using the option \texttt{--alias lama-first}.
 
@@ -22,14 +24,14 @@ The second problem modeled is a bit more complex: the number of objects modeled 
 found an optimal solution that requires the execution of 27 actions.
 
 
-\subsection{Problem2}
+\subsection{Problem 2}
 For this problem, the planner used is \texttt{Enhsp-2020} that is contained in \texttt{Planutils}.
 
 The modeled PDDL problem contains 6 people, 6 crates, 4 locations and just one carrier with capacity 4.
-Executing the planner with option \texttt{-anytime}, it managed to find an optimal solution that 
+Executing the planner with the option \texttt{-anytime}, it managed to find an optimal solution that 
 requires performing 16 actions.
 
-\subsection{Problem3}
+\subsection{Problem 3}
 For this problem, the planner used is \texttt{Optic} that is contained in \texttt{Planutils}.
 
 It has been decided to model two PDDL problem files.
@@ -38,4 +40,27 @@ In this way, as previously explained, only in the second problem the actions can
 
 The planner managed to find a plan of duration 34 seconds for for the first problem and a plan of
 duration 24 seconds for the second one.
-As can be seen in the second plan, some actions are performed simultaneously as desirable.
+As can be seen in the second plan, some actions are performed simultaneously as desired.
+
+\subsection{Problem 4}
+For this problem, the domain file is the same as Problem 3. TODO
+% The \texttt{PlanSys2} framework
+The terminal commands required to specify the problem are the equivalent of the PDDL problem file of the 
+Problem 3 and are reported in the directory of Problem 4.
+
+
+\begin{figure}[htbp]
+\centerline{\includegraphics[scale=0.45]{assignment_terminal.png}}
+\caption{Plan found by \texttt{POPF} planner.}
+\label{fig:plan}
+\end{figure}
+    
+\begin{figure}[htbp]
+\centerline{\includegraphics[scale=0.365]{assignment_run.png}}
+\caption{Execution of the plan.}
+\label{fig:execution}
+\end{figure}
+
+The \texttt{POPF} planner managed to find the plan of duration 42 seconds shown in Figure \ref{fig:plan}.  
+This plan is then executed by \texttt{PlanSys2} within the \texttt{ROS 2} framework. Figure 
+\ref{fig:execution} shows the execution of the plan and the messages sended by the action nodes.

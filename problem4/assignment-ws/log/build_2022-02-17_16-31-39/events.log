@@ -1,0 +1,192 @@
+[0.000000] (-) TimerEvent: {}
+[0.001902] (assignment) JobQueued: {'identifier': 'assignment', 'dependencies': OrderedDict()}
+[0.002063] (assignment) JobStarted: {'identifier': 'assignment'}
+[0.038652] (assignment) JobProgress: {'identifier': 'assignment', 'progress': 'cmake'}
+[0.042168] (assignment) JobProgress: {'identifier': 'assignment', 'progress': 'build'}
+[0.044039] (assignment) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/build/assignment', '--', '-j4', '-l4'], 'cwd': '/home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/build/assignment', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'hp'), ('SSH_AGENT_PID', '1508'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/hp/plansys2_ws/install/plansys2_terminal/lib:/home/hp/plansys2_ws/install/plansys2_bt_actions/lib:/home/hp/plansys2_ws/install/plansys2_executor/lib:/home/hp/plansys2_ws/install/plansys2_planner/lib:/home/hp/plansys2_ws/install/plansys2_problem_expert/lib:/home/hp/plansys2_ws/install/plansys2_domain_expert/lib:/home/hp/plansys2_ws/install/plansys2_popf_plan_solver/lib:/home/hp/plansys2_ws/install/plansys2_core/lib:/home/hp/plansys2_ws/install/plansys2_pddl_parser/lib:/home/hp/plansys2_ws/install/plansys2_msgs/lib:/home/hp/plansys2_ws/install/plansys2_lifecycle_manager/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/hp'), ('DESKTOP_SESSION', 'ubuntu'), ('TFD_HOME', '/home/hp/TFD/tfd-src-0.4/downward'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1328'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=d16c92346133481504db8b1c620e5b57'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/hp/plansys2_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'hp'), ('JOURNAL_STREAM', '8:45035'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'hp'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/usr/local/go/bin:/home/hp/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/hp-HP-250-G3-Notebook-PC:@/tmp/.ICE-unix/1551,unix/hp-HP-250-G3-Notebook-PC:/tmp/.ICE-unix/1551'), ('INVOCATION_ID', 'c58df16121e64372afd3edfd60463435'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/3a025f04_bd51_4793_a4c7_5c51ea1ba381'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.169'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/hp/plansys2_ws/install/plansys2_tests:/home/hp/plansys2_ws/install/plansys2_terminal:/home/hp/plansys2_ws/install/plansys2_bt_actions:/home/hp/plansys2_ws/install/plansys2_bringup:/home/hp/plansys2_ws/install/plansys2_executor:/home/hp/plansys2_ws/install/plansys2_planner:/home/hp/plansys2_ws/install/plansys2_problem_expert:/home/hp/plansys2_ws/install/plansys2_domain_expert:/home/hp/plansys2_ws/install/plansys2_popf_plan_solver:/home/hp/plansys2_ws/install/plansys2_core:/home/hp/plansys2_ws/install/plansys2_pddl_parser:/home/hp/plansys2_ws/install/plansys2_msgs:/home/hp/plansys2_ws/install/plansys2_lifecycle_manager:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/build/assignment'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=d16c92346133481504db8b1c620e5b57'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/hp/plansys2_ws/install/plansys2_msgs/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/hp/plansys2_ws/install/plansys2_tests:/home/hp/plansys2_ws/install/plansys2_terminal:/home/hp/plansys2_ws/install/plansys2_bt_actions:/home/hp/plansys2_ws/install/plansys2_bringup:/home/hp/plansys2_ws/install/plansys2_executor:/home/hp/plansys2_ws/install/plansys2_planner:/home/hp/plansys2_ws/install/plansys2_problem_expert:/home/hp/plansys2_ws/install/plansys2_domain_expert:/home/hp/plansys2_ws/install/plansys2_popf_plan_solver:/home/hp/plansys2_ws/install/plansys2_core:/home/hp/plansys2_ws/install/plansys2_pddl_parser:/home/hp/plansys2_ws/install/plansys2_msgs:/home/hp/plansys2_ws/install/plansys2_lifecycle_manager:/opt/ros/foxy')]), 'shell': False}
+[0.099386] (-) TimerEvent: {}
+[0.201140] (-) TimerEvent: {}
+[0.208563] (assignment) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target move_carrier_action_node\x1b[0m\n'}
+[0.213525] (assignment) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target deliver_action_node\x1b[0m\n'}
+[0.216710] (assignment) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target pick_up_action_node\x1b[0m\n'}
+[0.308262] (-) TimerEvent: {}
+[0.316451] (assignment) StdoutLine: {'line': b'[ 25%] Built target move_action_node\n'}
+[0.408359] (-) TimerEvent: {}
+[0.509249] (-) TimerEvent: {}
+[0.550770] (assignment) StdoutLine: {'line': b'[ 37%] \x1b[32mBuilding CXX object CMakeFiles/pick_up_action_node.dir/src/pick_up_action_node.cpp.o\x1b[0m\n'}
+[0.576027] (assignment) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/move_carrier_action_node.dir/src/move_carrier_action_node.cpp.o\x1b[0m\n'}
+[0.609410] (-) TimerEvent: {}
+[0.614415] (assignment) StdoutLine: {'line': b'[ 62%] \x1b[32mBuilding CXX object CMakeFiles/deliver_action_node.dir/src/deliver_action_node.cpp.o\x1b[0m\n'}
+[0.709571] (-) TimerEvent: {}
+[0.810494] (-) TimerEvent: {}
+[0.911546] (-) TimerEvent: {}
+[1.012608] (-) TimerEvent: {}
+[1.113425] (-) TimerEvent: {}
+[1.214211] (-) TimerEvent: {}
+[1.315043] (-) TimerEvent: {}
+[1.415935] (-) TimerEvent: {}
+[1.516844] (-) TimerEvent: {}
+[1.623375] (-) TimerEvent: {}
+[1.724258] (-) TimerEvent: {}
+[1.825202] (-) TimerEvent: {}
+[1.925790] (-) TimerEvent: {}
+[2.026392] (-) TimerEvent: {}
+[2.127002] (-) TimerEvent: {}
+[2.227651] (-) TimerEvent: {}
+[2.328417] (-) TimerEvent: {}
+[2.429181] (-) TimerEvent: {}
+[2.529976] (-) TimerEvent: {}
+[2.635265] (-) TimerEvent: {}
+[2.740380] (-) TimerEvent: {}
+[2.847789] (-) TimerEvent: {}
+[2.956383] (-) TimerEvent: {}
+[3.056979] (-) TimerEvent: {}
+[3.157549] (-) TimerEvent: {}
+[3.264371] (-) TimerEvent: {}
+[3.368375] (-) TimerEvent: {}
+[3.469156] (-) TimerEvent: {}
+[3.571755] (-) TimerEvent: {}
+[3.672734] (-) TimerEvent: {}
+[3.776429] (-) TimerEvent: {}
+[3.877442] (-) TimerEvent: {}
+[3.978210] (-) TimerEvent: {}
+[4.083572] (-) TimerEvent: {}
+[4.184165] (-) TimerEvent: {}
+[4.284775] (-) TimerEvent: {}
+[4.385703] (-) TimerEvent: {}
+[4.486649] (-) TimerEvent: {}
+[4.587495] (-) TimerEvent: {}
+[4.688390] (-) TimerEvent: {}
+[4.789225] (-) TimerEvent: {}
+[4.892432] (-) TimerEvent: {}
+[4.996355] (-) TimerEvent: {}
+[5.096979] (-) TimerEvent: {}
+[5.198031] (-) TimerEvent: {}
+[5.298632] (-) TimerEvent: {}
+[5.399741] (-) TimerEvent: {}
+[5.500849] (-) TimerEvent: {}
+[5.604208] (-) TimerEvent: {}
+[5.704862] (-) TimerEvent: {}
+[5.805455] (-) TimerEvent: {}
+[5.906490] (-) TimerEvent: {}
+[6.007491] (-) TimerEvent: {}
+[6.108565] (-) TimerEvent: {}
+[6.209683] (-) TimerEvent: {}
+[6.310713] (-) TimerEvent: {}
+[6.411771] (-) TimerEvent: {}
+[6.512957] (-) TimerEvent: {}
+[6.614176] (-) TimerEvent: {}
+[6.715253] (-) TimerEvent: {}
+[6.816617] (-) TimerEvent: {}
+[6.917707] (-) TimerEvent: {}
+[7.018564] (-) TimerEvent: {}
+[7.119382] (-) TimerEvent: {}
+[7.220349] (-) TimerEvent: {}
+[7.320977] (-) TimerEvent: {}
+[7.422153] (-) TimerEvent: {}
+[7.523141] (-) TimerEvent: {}
+[7.624892] (-) TimerEvent: {}
+[7.725506] (-) TimerEvent: {}
+[7.827112] (-) TimerEvent: {}
+[7.928149] (-) TimerEvent: {}
+[8.028999] (-) TimerEvent: {}
+[8.129962] (-) TimerEvent: {}
+[8.230550] (-) TimerEvent: {}
+[8.331393] (-) TimerEvent: {}
+[8.432124] (-) TimerEvent: {}
+[8.532909] (-) TimerEvent: {}
+[8.636479] (-) TimerEvent: {}
+[8.737331] (-) TimerEvent: {}
+[8.838246] (-) TimerEvent: {}
+[8.938869] (-) TimerEvent: {}
+[9.039857] (-) TimerEvent: {}
+[9.140668] (-) TimerEvent: {}
+[9.241428] (-) TimerEvent: {}
+[9.342019] (-) TimerEvent: {}
+[9.442749] (-) TimerEvent: {}
+[9.543690] (-) TimerEvent: {}
+[9.644717] (-) TimerEvent: {}
+[9.745882] (-) TimerEvent: {}
+[9.846906] (-) TimerEvent: {}
+[9.949122] (-) TimerEvent: {}
+[10.049762] (-) TimerEvent: {}
+[10.150823] (-) TimerEvent: {}
+[10.251672] (-) TimerEvent: {}
+[10.352737] (-) TimerEvent: {}
+[10.453600] (-) TimerEvent: {}
+[10.555551] (-) TimerEvent: {}
+[10.656346] (-) TimerEvent: {}
+[10.757118] (-) TimerEvent: {}
+[10.858253] (-) TimerEvent: {}
+[10.959154] (-) TimerEvent: {}
+[11.060130] (-) TimerEvent: {}
+[11.120501] (assignment) StdoutLine: {'line': b'[ 75%] \x1b[32m\x1b[1mLinking CXX executable move_carrier_action_node\x1b[0m\n'}
+[11.160314] (-) TimerEvent: {}
+[11.262275] (-) TimerEvent: {}
+[11.363198] (-) TimerEvent: {}
+[11.463885] (-) TimerEvent: {}
+[11.565077] (-) TimerEvent: {}
+[11.666372] (-) TimerEvent: {}
+[11.767624] (-) TimerEvent: {}
+[11.868756] (-) TimerEvent: {}
+[11.870755] (assignment) StdoutLine: {'line': b'[ 87%] \x1b[32m\x1b[1mLinking CXX executable deliver_action_node\x1b[0m\n'}
+[11.968942] (-) TimerEvent: {}
+[12.080420] (-) TimerEvent: {}
+[12.181484] (-) TimerEvent: {}
+[12.265854] (assignment) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable pick_up_action_node\x1b[0m\n'}
+[12.281654] (-) TimerEvent: {}
+[12.384421] (-) TimerEvent: {}
+[12.485541] (-) TimerEvent: {}
+[12.586552] (-) TimerEvent: {}
+[12.691949] (-) TimerEvent: {}
+[12.793557] (-) TimerEvent: {}
+[12.895411] (-) TimerEvent: {}
+[12.998362] (-) TimerEvent: {}
+[13.105216] (-) TimerEvent: {}
+[13.207834] (-) TimerEvent: {}
+[13.309884] (-) TimerEvent: {}
+[13.379647] (assignment) StdoutLine: {'line': b'[100%] Built target move_carrier_action_node\n'}
+[13.410059] (-) TimerEvent: {}
+[13.512358] (-) TimerEvent: {}
+[13.613050] (-) TimerEvent: {}
+[13.713796] (-) TimerEvent: {}
+[13.814684] (-) TimerEvent: {}
+[13.915381] (-) TimerEvent: {}
+[13.985800] (assignment) StdoutLine: {'line': b'[100%] Built target deliver_action_node\n'}
+[14.015560] (-) TimerEvent: {}
+[14.062863] (assignment) StdoutLine: {'line': b'[100%] Built target pick_up_action_node\n'}
+[14.090102] (assignment) CommandEnded: {'returncode': 0}
+[14.115808] (-) TimerEvent: {}
+[14.173390] (assignment) JobProgress: {'identifier': 'assignment', 'progress': 'install'}
+[14.207837] (assignment) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/build/assignment'], 'cwd': '/home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/build/assignment', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'hp'), ('SSH_AGENT_PID', '1508'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/hp/plansys2_ws/install/plansys2_terminal/lib:/home/hp/plansys2_ws/install/plansys2_bt_actions/lib:/home/hp/plansys2_ws/install/plansys2_executor/lib:/home/hp/plansys2_ws/install/plansys2_planner/lib:/home/hp/plansys2_ws/install/plansys2_problem_expert/lib:/home/hp/plansys2_ws/install/plansys2_domain_expert/lib:/home/hp/plansys2_ws/install/plansys2_popf_plan_solver/lib:/home/hp/plansys2_ws/install/plansys2_core/lib:/home/hp/plansys2_ws/install/plansys2_pddl_parser/lib:/home/hp/plansys2_ws/install/plansys2_msgs/lib:/home/hp/plansys2_ws/install/plansys2_lifecycle_manager/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/hp'), ('DESKTOP_SESSION', 'ubuntu'), ('TFD_HOME', '/home/hp/TFD/tfd-src-0.4/downward'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1328'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=d16c92346133481504db8b1c620e5b57'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/hp/plansys2_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'hp'), ('JOURNAL_STREAM', '8:45035'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'hp'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/usr/local/go/bin:/home/hp/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/hp-HP-250-G3-Notebook-PC:@/tmp/.ICE-unix/1551,unix/hp-HP-250-G3-Notebook-PC:/tmp/.ICE-unix/1551'), ('INVOCATION_ID', 'c58df16121e64372afd3edfd60463435'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/3a025f04_bd51_4793_a4c7_5c51ea1ba381'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.169'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/hp/plansys2_ws/install/plansys2_tests:/home/hp/plansys2_ws/install/plansys2_terminal:/home/hp/plansys2_ws/install/plansys2_bt_actions:/home/hp/plansys2_ws/install/plansys2_bringup:/home/hp/plansys2_ws/install/plansys2_executor:/home/hp/plansys2_ws/install/plansys2_planner:/home/hp/plansys2_ws/install/plansys2_problem_expert:/home/hp/plansys2_ws/install/plansys2_domain_expert:/home/hp/plansys2_ws/install/plansys2_popf_plan_solver:/home/hp/plansys2_ws/install/plansys2_core:/home/hp/plansys2_ws/install/plansys2_pddl_parser:/home/hp/plansys2_ws/install/plansys2_msgs:/home/hp/plansys2_ws/install/plansys2_lifecycle_manager:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/build/assignment'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=d16c92346133481504db8b1c620e5b57'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/hp/plansys2_ws/install/plansys2_msgs/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/hp/plansys2_ws/install/plansys2_tests:/home/hp/plansys2_ws/install/plansys2_terminal:/home/hp/plansys2_ws/install/plansys2_bt_actions:/home/hp/plansys2_ws/install/plansys2_bringup:/home/hp/plansys2_ws/install/plansys2_executor:/home/hp/plansys2_ws/install/plansys2_planner:/home/hp/plansys2_ws/install/plansys2_problem_expert:/home/hp/plansys2_ws/install/plansys2_domain_expert:/home/hp/plansys2_ws/install/plansys2_popf_plan_solver:/home/hp/plansys2_ws/install/plansys2_core:/home/hp/plansys2_ws/install/plansys2_pddl_parser:/home/hp/plansys2_ws/install/plansys2_msgs:/home/hp/plansys2_ws/install/plansys2_lifecycle_manager:/opt/ros/foxy')]), 'shell': False}
+[14.215903] (-) TimerEvent: {}
+[14.229718] (assignment) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[14.231196] (assignment) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[14.238198] (assignment) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/install/assignment/share/assignment/launch/assignment_launch.py\n'}
+[14.239420] (assignment) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/install/assignment/share/assignment/pddl/assignment-domain3.pddl\n'}
+[14.240764] (assignment) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/install/assignment/share/assignment/pddl/assignment-domain3_tmp.pddl\n'}
+[14.244474] (assignment) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/install/assignment/lib/assignment/deliver_action_node\n'}
+[14.244943] (assignment) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/install/assignment/lib/assignment/move_action_node\n'}
+[14.248335] (assignment) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/install/assignment/lib/assignment/move_carrier_action_node\n'}
+[14.248861] (assignment) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/install/assignment/lib/assignment/pick_up_action_node\n'}
+[14.249452] (assignment) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/install/assignment/share/ament_index/resource_index/package_run_dependencies/assignment\n'}
+[14.249921] (assignment) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/install/assignment/share/ament_index/resource_index/parent_prefix_path/assignment\n'}
+[14.250622] (assignment) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/install/assignment/share/assignment/environment/ament_prefix_path.sh\n'}
+[14.252869] (assignment) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/install/assignment/share/assignment/environment/ament_prefix_path.dsv\n'}
+[14.261229] (assignment) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/install/assignment/share/assignment/environment/path.sh\n'}
+[14.261778] (assignment) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/install/assignment/share/assignment/environment/path.dsv\n'}
+[14.262135] (assignment) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/install/assignment/share/assignment/local_setup.bash\n'}
+[14.262468] (assignment) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/install/assignment/share/assignment/local_setup.sh\n'}
+[14.262843] (assignment) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/install/assignment/share/assignment/local_setup.zsh\n'}
+[14.263207] (assignment) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/install/assignment/share/assignment/local_setup.dsv\n'}
+[14.263564] (assignment) StdoutLine: {'line': b'-- Symlinking: /home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/install/assignment/share/assignment/package.dsv\n'}
+[14.288339] (assignment) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/install/assignment/share/ament_index/resource_index/packages/assignment\n'}
+[14.290616] (assignment) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/install/assignment/share/assignment/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[14.292497] (assignment) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/install/assignment/share/assignment/cmake/assignmentConfig.cmake\n'}
+[14.295259] (assignment) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/install/assignment/share/assignment/cmake/assignmentConfig-version.cmake\n'}
+[14.296388] (assignment) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/install/assignment/share/assignment/package.xml\n'}
+[14.301649] (assignment) CommandEnded: {'returncode': 0}
+[14.316009] (-) TimerEvent: {}
+[14.417779] (-) TimerEvent: {}
+[14.460381] (assignment) JobEnded: {'identifier': 'assignment', 'rc': 0}
+[14.463232] (-) EventReactorShutdown: {}

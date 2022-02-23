@@ -1,0 +1,180 @@
+[0.070s] Invoking command in '/home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/build/assignment': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/build/assignment -- -j4 -l4
+[0.477s] [35m[1mScanning dependencies of target move_carrier_action_node[0m
+[0.480s] [35m[1mScanning dependencies of target pick_up_action_node[0m
+[0.481s] [35m[1mScanning dependencies of target deliver_action_node[0m
+[0.483s] [35m[1mScanning dependencies of target move_action_node[0m
+[0.762s] [ 12%] [32mBuilding CXX object CMakeFiles/move_carrier_action_node.dir/src/move_carrier_action_node.cpp.o[0m
+[0.803s] [ 25%] [32mBuilding CXX object CMakeFiles/pick_up_action_node.dir/src/pick_up_action_node.cpp.o[0m
+[0.836s] [ 37%] [32mBuilding CXX object CMakeFiles/deliver_action_node.dir/src/deliver_action_node.cpp.o[0m
+[1.077s] [ 50%] [32mBuilding CXX object CMakeFiles/move_action_node.dir/src/move_action_node.cpp.o[0m
+[13.586s] [01m[K/home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/assignment/src/deliver_action_node.cpp:[m[K In member function ‘[01m[Kvirtual void DeliverAction::do_work()[m[K’:
+[13.587s] [01m[K/home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/assignment/src/deliver_action_node.cpp:39:44:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kmin(double, float&)[m[K’
+[13.588s]    39 |       send_feedback(std::min(1.0, progress_[01;31m[K)[m[K, "deliver running");
+[13.588s]       |                                            [01;31m[K^[m[K
+[13.589s] In file included from [01m[K/usr/include/c++/9/memory:62[m[K,
+[13.589s]                  from [01m[K/home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/assignment/src/deliver_action_node.cpp:15[m[K:
+[13.590s] [01m[K/usr/include/c++/9/bits/stl_algobase.h:198:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> constexpr const _Tp& std::min(const _Tp&, const _Tp&)[m[K’
+[13.591s]   198 |     [01;36m[Kmin[m[K(const _Tp& __a, const _Tp& __b)
+[13.591s]       |     [01;36m[K^~~[m[K
+[13.592s] [01m[K/usr/include/c++/9/bits/stl_algobase.h:198:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[13.592s] [01m[K/home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/assignment/src/deliver_action_node.cpp:39:44:[m[K [01;36m[Knote: [m[K  deduced conflicting types for parameter ‘[01m[Kconst _Tp[m[K’ (‘[01m[Kdouble[m[K’ and ‘[01m[Kfloat[m[K’)
+[13.593s]    39 |       send_feedback(std::min(1.0, progress_[01;36m[K)[m[K, "deliver running");
+[13.594s]       |                                            [01;36m[K^[m[K
+[13.594s] In file included from [01m[K/usr/include/c++/9/memory:62[m[K,
+[13.595s]                  from [01m[K/home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/assignment/src/deliver_action_node.cpp:15[m[K:
+[13.595s] [01m[K/usr/include/c++/9/bits/stl_algobase.h:246:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class _Compare> constexpr const _Tp& std::min(const _Tp&, const _Tp&, _Compare)[m[K’
+[13.596s]   246 |     [01;36m[Kmin[m[K(const _Tp& __a, const _Tp& __b, _Compare __comp)
+[13.596s]       |     [01;36m[K^~~[m[K
+[13.597s] [01m[K/usr/include/c++/9/bits/stl_algobase.h:246:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[13.598s] [01m[K/home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/assignment/src/deliver_action_node.cpp:39:44:[m[K [01;36m[Knote: [m[K  deduced conflicting types for parameter ‘[01m[Kconst _Tp[m[K’ (‘[01m[Kdouble[m[K’ and ‘[01m[Kfloat[m[K’)
+[13.598s]    39 |       send_feedback(std::min(1.0, progress_[01;36m[K)[m[K, "deliver running");
+[13.599s]       |                                            [01;36m[K^[m[K
+[13.601s] In file included from [01m[K/usr/include/c++/9/algorithm:62[m[K,
+[13.602s]                  from [01m[K/home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/assignment/src/deliver_action_node.cpp:16[m[K:
+[13.614s] [01m[K/usr/include/c++/9/bits/stl_algo.h:3444:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> constexpr _Tp std::min(std::initializer_list<_Tp>)[m[K’
+[13.615s]  3444 |     [01;36m[Kmin[m[K(initializer_list<_Tp> __l)
+[13.616s]       |     [01;36m[K^~~[m[K
+[13.616s] [01m[K/usr/include/c++/9/bits/stl_algo.h:3444:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[13.617s] [01m[K/home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/assignment/src/deliver_action_node.cpp:39:44:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kstd::initializer_list<_Tp>[m[K’ and ‘[01m[Kdouble[m[K’
+[13.617s]    39 |       send_feedback(std::min(1.0, progress_[01;36m[K)[m[K, "deliver running");
+[13.618s]       |                                            [01;36m[K^[m[K
+[13.619s] In file included from [01m[K/usr/include/c++/9/algorithm:62[m[K,
+[13.619s]                  from [01m[K/home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/assignment/src/deliver_action_node.cpp:16[m[K:
+[13.620s] [01m[K/usr/include/c++/9/bits/stl_algo.h:3450:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class _Compare> constexpr _Tp std::min(std::initializer_list<_Tp>, _Compare)[m[K’
+[13.621s]  3450 |     [01;36m[Kmin[m[K(initializer_list<_Tp> __l, _Compare __comp)
+[13.621s]       |     [01;36m[K^~~[m[K
+[13.622s] [01m[K/usr/include/c++/9/bits/stl_algo.h:3450:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[13.623s] [01m[K/home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/assignment/src/deliver_action_node.cpp:39:44:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kstd::initializer_list<_Tp>[m[K’ and ‘[01m[Kdouble[m[K’
+[13.623s]    39 |       send_feedback(std::min(1.0, progress_[01;36m[K)[m[K, "deliver running");
+[13.624s]       |                                            [01;36m[K^[m[K
+[13.842s] [01m[K/home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/assignment/src/pick_up_action_node.cpp:[m[K In member function ‘[01m[Kvirtual void PickUpAction::do_work()[m[K’:
+[13.843s] [01m[K/home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/assignment/src/pick_up_action_node.cpp:39:44:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kmin(double, float&)[m[K’
+[13.843s]    39 |       send_feedback(std::min(1.0, progress_[01;31m[K)[m[K, "Pick_up running");
+[13.844s]       |                                            [01;31m[K^[m[K
+[13.845s] In file included from [01m[K/usr/include/c++/9/memory:62[m[K,
+[13.845s]                  from [01m[K/home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/assignment/src/pick_up_action_node.cpp:15[m[K:
+[13.846s] [01m[K/usr/include/c++/9/bits/stl_algobase.h:198:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> constexpr const _Tp& std::min(const _Tp&, const _Tp&)[m[K’
+[13.846s]   198 |     [01;36m[Kmin[m[K(const _Tp& __a, const _Tp& __b)
+[13.847s]       |     [01;36m[K^~~[m[K
+[13.848s] [01m[K/usr/include/c++/9/bits/stl_algobase.h:198:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[13.848s] [01m[K/home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/assignment/src/pick_up_action_node.cpp:39:44:[m[K [01;36m[Knote: [m[K  deduced conflicting types for parameter ‘[01m[Kconst _Tp[m[K’ (‘[01m[Kdouble[m[K’ and ‘[01m[Kfloat[m[K’)
+[13.849s]    39 |       send_feedback(std::min(1.0, progress_[01;36m[K)[m[K, "Pick_up running");
+[13.850s]       |                                            [01;36m[K^[m[K
+[13.850s] In file included from [01m[K/usr/include/c++/9/memory:62[m[K,
+[13.851s]                  from [01m[K/home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/assignment/src/pick_up_action_node.cpp:15[m[K:
+[13.852s] [01m[K/usr/include/c++/9/bits/stl_algobase.h:246:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class _Compare> constexpr const _Tp& std::min(const _Tp&, const _Tp&, _Compare)[m[K’
+[13.852s]   246 |     [01;36m[Kmin[m[K(const _Tp& __a, const _Tp& __b, _Compare __comp)
+[13.853s]       |     [01;36m[K^~~[m[K
+[13.853s] [01m[K/usr/include/c++/9/bits/stl_algobase.h:246:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[13.854s] [01m[K/home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/assignment/src/pick_up_action_node.cpp:39:44:[m[K [01;36m[Knote: [m[K  deduced conflicting types for parameter ‘[01m[Kconst _Tp[m[K’ (‘[01m[Kdouble[m[K’ and ‘[01m[Kfloat[m[K’)
+[13.855s]    39 |       send_feedback(std::min(1.0, progress_[01;36m[K)[m[K, "Pick_up running");
+[13.856s]       |                                            [01;36m[K^[m[K
+[13.858s] In file included from [01m[K/usr/include/c++/9/algorithm:62[m[K,
+[13.859s]                  from [01m[K/home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/assignment/src/pick_up_action_node.cpp:16[m[K:
+[13.859s] [01m[K/usr/include/c++/9/bits/stl_algo.h:3444:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> constexpr _Tp std::min(std::initializer_list<_Tp>)[m[K’
+[13.859s]  3444 |     [01;36m[Kmin[m[K(initializer_list<_Tp> __l)
+[13.860s]       |     [01;36m[K^~~[m[K
+[13.860s] [01m[K/usr/include/c++/9/bits/stl_algo.h:3444:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[13.870s] [01m[K/home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/assignment/src/pick_up_action_node.cpp:39:44:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kstd::initializer_list<_Tp>[m[K’ and ‘[01m[Kdouble[m[K’
+[13.870s]    39 |       send_feedback(std::min(1.0, progress_[01;36m[K)[m[K, "Pick_up running");
+[13.871s]       |                                            [01;36m[K^[m[K
+[13.871s] In file included from [01m[K/usr/include/c++/9/algorithm:62[m[K,
+[13.872s]                  from [01m[K/home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/assignment/src/pick_up_action_node.cpp:16[m[K:
+[13.872s] [01m[K/usr/include/c++/9/bits/stl_algo.h:3450:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class _Compare> constexpr _Tp std::min(std::initializer_list<_Tp>, _Compare)[m[K’
+[13.873s]  3450 |     [01;36m[Kmin[m[K(initializer_list<_Tp> __l, _Compare __comp)
+[13.873s]       |     [01;36m[K^~~[m[K
+[13.873s] [01m[K/usr/include/c++/9/bits/stl_algo.h:3450:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[13.874s] [01m[K/home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/assignment/src/pick_up_action_node.cpp:39:44:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kstd::initializer_list<_Tp>[m[K’ and ‘[01m[Kdouble[m[K’
+[13.874s]    39 |       send_feedback(std::min(1.0, progress_[01;36m[K)[m[K, "Pick_up running");
+[13.875s]       |                                            [01;36m[K^[m[K
+[14.121s] [01m[K/home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/assignment/src/move_carrier_action_node.cpp:[m[K In member function ‘[01m[Kvirtual void MoveCarrierAction::do_work()[m[K’:
+[14.122s] [01m[K/home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/assignment/src/move_carrier_action_node.cpp:39:44:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kmin(double, float&)[m[K’
+[14.123s]    39 |       send_feedback(std::min(1.0, progress_[01;31m[K)[m[K, "move_carrier running");
+[14.124s]       |                                            [01;31m[K^[m[K
+[14.124s] In file included from [01m[K/usr/include/c++/9/memory:62[m[K,
+[14.125s]                  from [01m[K/home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/assignment/src/move_carrier_action_node.cpp:15[m[K:
+[14.126s] [01m[K/usr/include/c++/9/bits/stl_algobase.h:198:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> constexpr const _Tp& std::min(const _Tp&, const _Tp&)[m[K’
+[14.127s]   198 |     [01;36m[Kmin[m[K(const _Tp& __a, const _Tp& __b)
+[14.128s]       |     [01;36m[K^~~[m[K
+[14.128s] [01m[K/usr/include/c++/9/bits/stl_algobase.h:198:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[14.129s] [01m[K/home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/assignment/src/move_carrier_action_node.cpp:39:44:[m[K [01;36m[Knote: [m[K  deduced conflicting types for parameter ‘[01m[Kconst _Tp[m[K’ (‘[01m[Kdouble[m[K’ and ‘[01m[Kfloat[m[K’)
+[14.130s]    39 |       send_feedback(std::min(1.0, progress_[01;36m[K)[m[K, "move_carrier running");
+[14.131s]       |                                            [01;36m[K^[m[K
+[14.132s] In file included from [01m[K/usr/include/c++/9/memory:62[m[K,
+[14.132s]                  from [01m[K/home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/assignment/src/move_carrier_action_node.cpp:15[m[K:
+[14.133s] [01m[K/usr/include/c++/9/bits/stl_algobase.h:246:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class _Compare> constexpr const _Tp& std::min(const _Tp&, const _Tp&, _Compare)[m[K’
+[14.134s]   246 |     [01;36m[Kmin[m[K(const _Tp& __a, const _Tp& __b, _Compare __comp)
+[14.135s]       |     [01;36m[K^~~[m[K
+[14.142s] [01m[K/usr/include/c++/9/bits/stl_algobase.h:246:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[14.143s] [01m[K/home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/assignment/src/move_carrier_action_node.cpp:39:44:[m[K [01;36m[Knote: [m[K  deduced conflicting types for parameter ‘[01m[Kconst _Tp[m[K’ (‘[01m[Kdouble[m[K’ and ‘[01m[Kfloat[m[K’)
+[14.144s]    39 |       send_feedback(std::min(1.0, progress_[01;36m[K)[m[K, "move_carrier running");
+[14.145s]       |                                            [01;36m[K^[m[K
+[14.146s] In file included from [01m[K/usr/include/c++/9/algorithm:62[m[K,
+[14.146s]                  from [01m[K/home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/assignment/src/move_carrier_action_node.cpp:16[m[K:
+[14.147s] [01m[K/usr/include/c++/9/bits/stl_algo.h:3444:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> constexpr _Tp std::min(std::initializer_list<_Tp>)[m[K’
+[14.148s]  3444 |     [01;36m[Kmin[m[K(initializer_list<_Tp> __l)
+[14.149s]       |     [01;36m[K^~~[m[K
+[14.150s] [01m[K/usr/include/c++/9/bits/stl_algo.h:3444:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[14.151s] [01m[K/home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/assignment/src/move_carrier_action_node.cpp:39:44:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kstd::initializer_list<_Tp>[m[K’ and ‘[01m[Kdouble[m[K’
+[14.151s]    39 |       send_feedback(std::min(1.0, progress_[01;36m[K)[m[K, "move_carrier running");
+[14.152s]       |                                            [01;36m[K^[m[K
+[14.153s] In file included from [01m[K/usr/include/c++/9/algorithm:62[m[K,
+[14.164s]                  from [01m[K/home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/assignment/src/move_carrier_action_node.cpp:16[m[K:
+[14.165s] [01m[K/usr/include/c++/9/bits/stl_algo.h:3450:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class _Compare> constexpr _Tp std::min(std::initializer_list<_Tp>, _Compare)[m[K’
+[14.166s]  3450 |     [01;36m[Kmin[m[K(initializer_list<_Tp> __l, _Compare __comp)
+[14.167s]       |     [01;36m[K^~~[m[K
+[14.168s] [01m[K/usr/include/c++/9/bits/stl_algo.h:3450:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[14.168s] [01m[K/home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/assignment/src/move_carrier_action_node.cpp:39:44:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kstd::initializer_list<_Tp>[m[K’ and ‘[01m[Kdouble[m[K’
+[14.169s]    39 |       send_feedback(std::min(1.0, progress_[01;36m[K)[m[K, "move_carrier running");
+[14.170s]       |                                            [01;36m[K^[m[K
+[14.508s] [01m[K/home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/assignment/src/move_action_node.cpp:[m[K In member function ‘[01m[Kvirtual void MoveAction::do_work()[m[K’:
+[14.509s] [01m[K/home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/assignment/src/move_action_node.cpp:39:44:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kmin(double, float&)[m[K’
+[14.510s]    39 |       send_feedback(std::min(1.0, progress_[01;31m[K)[m[K, "move running");
+[14.511s]       |                                            [01;31m[K^[m[K
+[14.512s] In file included from [01m[K/usr/include/c++/9/memory:62[m[K,
+[14.513s]                  from [01m[K/home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/assignment/src/move_action_node.cpp:15[m[K:
+[14.513s] [01m[K/usr/include/c++/9/bits/stl_algobase.h:198:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> constexpr const _Tp& std::min(const _Tp&, const _Tp&)[m[K’
+[14.514s]   198 |     [01;36m[Kmin[m[K(const _Tp& __a, const _Tp& __b)
+[14.515s]       |     [01;36m[K^~~[m[K
+[14.516s] [01m[K/usr/include/c++/9/bits/stl_algobase.h:198:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[14.516s] [01m[K/home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/assignment/src/move_action_node.cpp:39:44:[m[K [01;36m[Knote: [m[K  deduced conflicting types for parameter ‘[01m[Kconst _Tp[m[K’ (‘[01m[Kdouble[m[K’ and ‘[01m[Kfloat[m[K’)
+[14.517s]    39 |       send_feedback(std::min(1.0, progress_[01;36m[K)[m[K, "move running");
+[14.518s]       |                                            [01;36m[K^[m[K
+[14.519s] In file included from [01m[K/usr/include/c++/9/memory:62[m[K,
+[14.519s]                  from [01m[K/home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/assignment/src/move_action_node.cpp:15[m[K:
+[14.520s] [01m[K/usr/include/c++/9/bits/stl_algobase.h:246:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class _Compare> constexpr const _Tp& std::min(const _Tp&, const _Tp&, _Compare)[m[K’
+[14.521s]   246 |     [01;36m[Kmin[m[K(const _Tp& __a, const _Tp& __b, _Compare __comp)
+[14.522s]       |     [01;36m[K^~~[m[K
+[14.530s] [01m[K/usr/include/c++/9/bits/stl_algobase.h:246:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[14.531s] [01m[K/home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/assignment/src/move_action_node.cpp:39:44:[m[K [01;36m[Knote: [m[K  deduced conflicting types for parameter ‘[01m[Kconst _Tp[m[K’ (‘[01m[Kdouble[m[K’ and ‘[01m[Kfloat[m[K’)
+[14.532s]    39 |       send_feedback(std::min(1.0, progress_[01;36m[K)[m[K, "move running");
+[14.533s]       |                                            [01;36m[K^[m[K
+[14.533s] In file included from [01m[K/usr/include/c++/9/algorithm:62[m[K,
+[14.534s]                  from [01m[K/home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/assignment/src/move_action_node.cpp:16[m[K:
+[14.535s] [01m[K/usr/include/c++/9/bits/stl_algo.h:3444:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> constexpr _Tp std::min(std::initializer_list<_Tp>)[m[K’
+[14.536s]  3444 |     [01;36m[Kmin[m[K(initializer_list<_Tp> __l)
+[14.537s]       |     [01;36m[K^~~[m[K
+[14.537s] [01m[K/usr/include/c++/9/bits/stl_algo.h:3444:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[14.538s] [01m[K/home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/assignment/src/move_action_node.cpp:39:44:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kstd::initializer_list<_Tp>[m[K’ and ‘[01m[Kdouble[m[K’
+[14.539s]    39 |       send_feedback(std::min(1.0, progress_[01;36m[K)[m[K, "move running");
+[14.540s]       |                                            [01;36m[K^[m[K
+[14.540s] In file included from [01m[K/usr/include/c++/9/algorithm:62[m[K,
+[14.541s]                  from [01m[K/home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/assignment/src/move_action_node.cpp:16[m[K:
+[14.550s] [01m[K/usr/include/c++/9/bits/stl_algo.h:3450:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class _Compare> constexpr _Tp std::min(std::initializer_list<_Tp>, _Compare)[m[K’
+[14.551s]  3450 |     [01;36m[Kmin[m[K(initializer_list<_Tp> __l, _Compare __comp)
+[14.552s]       |     [01;36m[K^~~[m[K
+[14.554s] [01m[K/usr/include/c++/9/bits/stl_algo.h:3450:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[14.554s] [01m[K/home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/assignment/src/move_action_node.cpp:39:44:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kstd::initializer_list<_Tp>[m[K’ and ‘[01m[Kdouble[m[K’
+[14.555s]    39 |       send_feedback(std::min(1.0, progress_[01;36m[K)[m[K, "move running");
+[14.556s]       |                                            [01;36m[K^[m[K
+[15.607s] make[2]: *** [CMakeFiles/deliver_action_node.dir/build.make:63: CMakeFiles/deliver_action_node.dir/src/deliver_action_node.cpp.o] Error 1
+[15.608s] make[1]: *** [CMakeFiles/Makefile2:111: CMakeFiles/deliver_action_node.dir/all] Error 2
+[15.609s] make[1]: *** Waiting for unfinished jobs....
+[15.633s] make[2]: *** [CMakeFiles/pick_up_action_node.dir/build.make:63: CMakeFiles/pick_up_action_node.dir/src/pick_up_action_node.cpp.o] Error 1
+[15.634s] make[1]: *** [CMakeFiles/Makefile2:192: CMakeFiles/pick_up_action_node.dir/all] Error 2
+[15.819s] make[2]: *** [CMakeFiles/move_carrier_action_node.dir/build.make:63: CMakeFiles/move_carrier_action_node.dir/src/move_carrier_action_node.cpp.o] Error 1
+[15.820s] make[1]: *** [CMakeFiles/Makefile2:84: CMakeFiles/move_carrier_action_node.dir/all] Error 2
+[16.091s] make[2]: *** [CMakeFiles/move_action_node.dir/build.make:63: CMakeFiles/move_action_node.dir/src/move_action_node.cpp.o] Error 1
+[16.091s] make[1]: *** [CMakeFiles/Makefile2:138: CMakeFiles/move_action_node.dir/all] Error 2
+[16.092s] make: *** [Makefile:141: all] Error 2
+[16.099s] Invoked command in '/home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/build/assignment' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/build/assignment -- -j4 -l4

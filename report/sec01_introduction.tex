@@ -10,10 +10,13 @@ designed to express planning models. Developed by the planning research communit
 it has become a de-facto standard language of many planning systems.
 
 The purpose of the assignment is two-fold. First, model the given scenario using the PDDL language 
-and find a plan using a state of the art planner. Second, leveraging the PlanSys2 \ref{TODO} 
+and find a plan using a state of the art planner. Second, leveraging the \texttt{PlanSys2} \cite{PlanSys2} 
 infrastructure, integrate the model within a robotic setting.
 
-The proposed scenario \ref{TODO} is inspired by an emergency services logistic problem:
+ROS2 Planning System, \texttt{PlanSys2} in short, is a framework for symbolic planning that incorporates 
+novel approaches for execution on robots working in demanding environments \cite{PlanSys2}.
+
+The proposed scenario \cite{assignment} is inspired by an emergency services logistic problem:
 a number of injured people are situated at known locations and one or more robotic agents
 have the task to deliver crates containing emergency supplies to each person. 
 The planning system should formulate a plan for the robotic agents in order to deliver all
@@ -21,10 +24,10 @@ the crates needed by the injured people.
 
 The document is structured as follows: after this introduction, in Section \ref{sec2} 
 we explain in details our understanding of the proposed scenario and the four subproblems; 
-in Section \ref{sec3} we describe the design choices and the proposed solution to the problem,
-making some assumptions not written in the assignment document in order to constrain the problem;
-in Section \ref{TODO}, we analyze and criticize the achieved results and briefly describe the
-content of the submitted archive; in Section \ref{TODO}, we make some conclusions and future 
+in Section \ref{sec3} we describe the design choices and the proposed solutions to solve the problem,
+making some assumptions not written in the assignment document in order to constrain the problem; % TODO: scrivere meglio
+in Section \ref{sec4}, we analyze and criticize the achieved results and briefly describe the
+content of the submitted archive; in Section \ref{sec5}, we make some conclusions and future 
 works are proposed.
 
 

@@ -1,56 +1,17 @@
-This is BibTeX, Version 0.99d (TeX Live 2017/Debian)
-Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
-The top-level auxiliary file: report - Davide Lusuardi.aux
-The style file: IEEEtran.bst
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-Database file #1: biblio.bib.bib
--- IEEEtran.bst version 1.12 (2007/01/11) by Michael Shell.
--- http://www.michaelshell.org/tex/ieeetran/bibtex/
--- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
-
-Done.
-You've used 13 entries,
-            4024 wiz_defined-function locations,
-            885 strings with 9883 characters,
-and the built_in function-call counts, 10095 in all, are:
-= -- 762
-> -- 270
-< -- 79
-+ -- 149
-- -- 49
-* -- 492
-:= -- 1446
-add.period$ -- 26
-call.type$ -- 13
-change.case$ -- 13
-chr.to.int$ -- 183
-cite$ -- 13
-duplicate$ -- 732
-empty$ -- 851
-format.name$ -- 61
-if$ -- 2351
-int.to.chr$ -- 0
-int.to.str$ -- 13
-missing$ -- 137
-newline$ -- 62
-num.names$ -- 12
-pop$ -- 336
-preamble$ -- 1
-purify$ -- 0
-quote$ -- 2
-skip$ -- 781
-stack$ -- 0
-substring$ -- 440
-swap$ -- 590
-text.length$ -- 18
-text.prefix$ -- 0
-top$ -- 5
-type$ -- 13
-warning$ -- 0
-while$ -- 39
-width$ -- 15
-write$ -- 141
+[0] Config.pm:302> INFO - This is Biber 2.9
+[0] Config.pm:305> INFO - Logfile is 'report - Davide Lusuardi.blg'
+[20] biber:313> INFO - === Wed Feb 23, 2022, 11:45:10
+[34] Biber.pm:371> INFO - Reading 'report - Davide Lusuardi.bcf'
+[93] Biber.pm:857> INFO - Found 2 citekeys in bib section 0
+[105] Biber.pm:3981> INFO - Processing section 0
+[113] Biber.pm:4154> INFO - Looking for bibtex format file 'biblio.bib' for section 0
+[113] bibtex.pm:1468> INFO - LaTeX decoding ...
+[116] bibtex.pm:1294> INFO - Found BibTeX data source 'biblio.bib'
+[131] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[131] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[131] Biber.pm:3809> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
+[132] Biber.pm:3815> INFO - No sort tailoring available for locale 'en-US'
+[133] bbl.pm:617> INFO - Writing 'report - Davide Lusuardi.bbl' with encoding 'ascii'
+[136] Utils.pm:169> WARN - The entry 'PlanSys2' has characters which cannot be encoded in 'ascii'. Recoding problematic characters into macros.
+[136] bbl.pm:720> INFO - Output to report - Davide Lusuardi.bbl
+[136] Biber.pm:110> INFO - WARNINGS: 1

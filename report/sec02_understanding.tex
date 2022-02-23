@@ -48,7 +48,17 @@ Reasonable durations should be assigned to actions coherently with their time sp
 to execute actions in parallel should be analyzed taking into account real constraints.
 
 \subsection{Problem 4}
-In this subproblem, it's required to integrate within the PlanSys2 infrastructure the last subproblem.
+In this subproblem, it's required to integrate the Problem 3 within a robotic setting leveraging the 
+\texttt{PlanSys2} infrastructure.
+
+\texttt{PlanSys2} is composed of four nodes: the \textit{domain expert} that contains the PDDL model 
+information; the \textit{problem expert} that contains the problem information like current instances,
+predicates and goals; the \textit{planner} that generate the plan; the \textit{executor} that executes
+the plan by activating the action nodes.
+
+Considering this problem, it's required to define the PDDL domain file, implement an action node for 
+each specified action and define the launcher.
+
 % Problem 3 has been integrated within the PlanSys2 infrastructure.
 % TODO: spiegare meglio
 

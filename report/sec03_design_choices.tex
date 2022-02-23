@@ -79,14 +79,38 @@ Instead, the action \texttt{move} indicates now the movement of the robot withou
 This action could be useful, for e.g., if we want to model the fact that the carrier is not initially at 
 the depot.
 
-In Problem 3, the actions have been transformed in durative actions, specifying appropriate durations. % TODO: specificare durata
-A new predicate \texttt{(busy ?r - robot)} has been added in order to help modeling which actions can be
-executed in parallel. 
+In Problem 3, the actions have been transformed in durative actions, specifying appropriate durations.
+A constant duration time has been assigned to each action: \texttt{pick\_up} takes 2 time units to execute,
+\texttt{deliver} takes just 1 time unit, \texttt{move} takes 3 time units and \texttt{move\_carrier} takes 4
+time units since moving a carrier requires more effort.
+A new predicate \texttt{(free ?r - robot)}, that indicates when a robot is not executing any action,
+has been added in order to help modeling which actions can be executed in parallel: we decided to model the 
+fact that a robot cannot perform more actions in parallel because it sounds more reasonable.
+% a robot can perform
+% an action only when it is not performing any other action.
 % We decided to model the fact that actions performed from the same robot cannot be executed
 % in parallel (i.e., the same robot cannot perform the same action ).
-We decided to model the fact that a robot cannot perform the same action or whatever any other action in 
-parallel. This does not imply that actions cannot be executed in parallel, in fact, more robots can perform
+% We decided to model the fact that a robot cannot perform the same action or whatever any other action in 
+% parallel. 
+This does not imply that actions cannot be executed in parallel, in fact, more robots can perform
 actions at the same time. 
-Proper conditions and effects of actions have been implemented in order to enforce this situation.
+% Proper conditions and effects of actions have been implemented in order to enforce this situation, in 
+% particular by the use of the predicate \texttt{free}.
 
-In Problem 4, TODO
+In Problem 4, we have implemented within the \texttt{PlanSys2} framework the Problem 3.
+To do this, we have initially created the project workspace and we have copied within it the PDDL domain 
+file of Problem 3.
+Then we have implemented the four action nodes: they can be defined as \textit{fake actions} in the sense 
+that they do not really make any useful work but they only shows to the user the progress during the 
+execution of the required action. This feedback is given by the function \texttt{do\_work()} that, in
+a real implementation, should define the code necessary to perform the action.
+
+Finally, we have implemented the launcher, a \texttt{Python} script that is responsible for selecting the
+domain and running the action nodes.
+% and we have implemented the 
+% launcher and the four action nodes. Each action node, inside the function \texttt{do\_work()}, shows
+% to the user the progress during the execution of the required action. The action nodes are then instantiated by 
+% the launcher.
+
+The default planner used by \texttt{PlanSys2} is \texttt{POPF} and it is also the one used in this project.
+

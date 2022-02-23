@@ -1,0 +1,346 @@
+[0.000000] (-) TimerEvent: {}
+[0.000815] (assignment) JobQueued: {'identifier': 'assignment', 'dependencies': OrderedDict()}
+[0.001555] (assignment) JobStarted: {'identifier': 'assignment'}
+[0.062560] (assignment) JobProgress: {'identifier': 'assignment', 'progress': 'cmake'}
+[0.065817] (assignment) JobProgress: {'identifier': 'assignment', 'progress': 'build'}
+[0.068670] (assignment) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/build/assignment', '--', '-j4', '-l4'], 'cwd': '/home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/build/assignment', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'hp'), ('SSH_AGENT_PID', '1533'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/hp/plansys2_ws/install/plansys2_terminal/lib:/home/hp/plansys2_ws/install/plansys2_bt_actions/lib:/home/hp/plansys2_ws/install/plansys2_executor/lib:/home/hp/plansys2_ws/install/plansys2_planner/lib:/home/hp/plansys2_ws/install/plansys2_problem_expert/lib:/home/hp/plansys2_ws/install/plansys2_domain_expert/lib:/home/hp/plansys2_ws/install/plansys2_popf_plan_solver/lib:/home/hp/plansys2_ws/install/plansys2_core/lib:/home/hp/plansys2_ws/install/plansys2_pddl_parser/lib:/home/hp/plansys2_ws/install/plansys2_msgs/lib:/home/hp/plansys2_ws/install/plansys2_lifecycle_manager/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/hp'), ('OLDPWD', '/home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master'), ('DESKTOP_SESSION', 'ubuntu'), ('TFD_HOME', '/home/hp/TFD/tfd-src-0.4/downward'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1352'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=206a58e685de9648b2f3f0f161e413e1'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/hp/plansys2_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'hp'), ('JOURNAL_STREAM', '8:45370'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'hp'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/usr/local/go/bin:/home/hp/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/hp-HP-250-G3-Notebook-PC:@/tmp/.ICE-unix/1576,unix/hp-HP-250-G3-Notebook-PC:/tmp/.ICE-unix/1576'), ('INVOCATION_ID', '316588c3bf024f1eb3ce6126a6fc48c0'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/9cef1583_816f_4991_88fc_6c032247569e'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.83'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/hp/plansys2_ws/install/plansys2_tests:/home/hp/plansys2_ws/install/plansys2_terminal:/home/hp/plansys2_ws/install/plansys2_bt_actions:/home/hp/plansys2_ws/install/plansys2_bringup:/home/hp/plansys2_ws/install/plansys2_executor:/home/hp/plansys2_ws/install/plansys2_planner:/home/hp/plansys2_ws/install/plansys2_problem_expert:/home/hp/plansys2_ws/install/plansys2_domain_expert:/home/hp/plansys2_ws/install/plansys2_popf_plan_solver:/home/hp/plansys2_ws/install/plansys2_core:/home/hp/plansys2_ws/install/plansys2_pddl_parser:/home/hp/plansys2_ws/install/plansys2_msgs:/home/hp/plansys2_ws/install/plansys2_lifecycle_manager:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/build/assignment'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=206a58e685de9648b2f3f0f161e413e1'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/hp/plansys2_ws/install/plansys2_msgs/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/hp/plansys2_ws/install/plansys2_tests:/home/hp/plansys2_ws/install/plansys2_terminal:/home/hp/plansys2_ws/install/plansys2_bt_actions:/home/hp/plansys2_ws/install/plansys2_bringup:/home/hp/plansys2_ws/install/plansys2_executor:/home/hp/plansys2_ws/install/plansys2_planner:/home/hp/plansys2_ws/install/plansys2_problem_expert:/home/hp/plansys2_ws/install/plansys2_domain_expert:/home/hp/plansys2_ws/install/plansys2_popf_plan_solver:/home/hp/plansys2_ws/install/plansys2_core:/home/hp/plansys2_ws/install/plansys2_pddl_parser:/home/hp/plansys2_ws/install/plansys2_msgs:/home/hp/plansys2_ws/install/plansys2_lifecycle_manager:/opt/ros/foxy')]), 'shell': False}
+[0.099437] (-) TimerEvent: {}
+[0.200416] (-) TimerEvent: {}
+[0.301451] (-) TimerEvent: {}
+[0.402316] (-) TimerEvent: {}
+[0.477924] (assignment) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target move_carrier_action_node\x1b[0m\n'}
+[0.481539] (assignment) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target pick_up_action_node\x1b[0m\n'}
+[0.482693] (assignment) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target deliver_action_node\x1b[0m\n'}
+[0.483975] (assignment) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target move_action_node\x1b[0m\n'}
+[0.510241] (-) TimerEvent: {}
+[0.613602] (-) TimerEvent: {}
+[0.723757] (-) TimerEvent: {}
+[0.763447] (assignment) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding CXX object CMakeFiles/move_carrier_action_node.dir/src/move_carrier_action_node.cpp.o\x1b[0m\n'}
+[0.804437] (assignment) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/pick_up_action_node.dir/src/pick_up_action_node.cpp.o\x1b[0m\n'}
+[0.823927] (-) TimerEvent: {}
+[0.837867] (assignment) StdoutLine: {'line': b'[ 37%] \x1b[32mBuilding CXX object CMakeFiles/deliver_action_node.dir/src/deliver_action_node.cpp.o\x1b[0m\n'}
+[0.927953] (-) TimerEvent: {}
+[1.035828] (-) TimerEvent: {}
+[1.078478] (assignment) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/move_action_node.dir/src/move_action_node.cpp.o\x1b[0m\n'}
+[1.136316] (-) TimerEvent: {}
+[1.236946] (-) TimerEvent: {}
+[1.347723] (-) TimerEvent: {}
+[1.451723] (-) TimerEvent: {}
+[1.552395] (-) TimerEvent: {}
+[1.653361] (-) TimerEvent: {}
+[1.753961] (-) TimerEvent: {}
+[1.860246] (-) TimerEvent: {}
+[1.960784] (-) TimerEvent: {}
+[2.061457] (-) TimerEvent: {}
+[2.162120] (-) TimerEvent: {}
+[2.263161] (-) TimerEvent: {}
+[2.368065] (-) TimerEvent: {}
+[2.471781] (-) TimerEvent: {}
+[2.573038] (-) TimerEvent: {}
+[2.679730] (-) TimerEvent: {}
+[2.783762] (-) TimerEvent: {}
+[2.884311] (-) TimerEvent: {}
+[2.985362] (-) TimerEvent: {}
+[3.086555] (-) TimerEvent: {}
+[3.187637] (-) TimerEvent: {}
+[3.290320] (-) TimerEvent: {}
+[3.391524] (-) TimerEvent: {}
+[3.492507] (-) TimerEvent: {}
+[3.593381] (-) TimerEvent: {}
+[3.701818] (-) TimerEvent: {}
+[3.802991] (-) TimerEvent: {}
+[3.904445] (-) TimerEvent: {}
+[4.007733] (-) TimerEvent: {}
+[4.111269] (-) TimerEvent: {}
+[4.216470] (-) TimerEvent: {}
+[4.319775] (-) TimerEvent: {}
+[4.431736] (-) TimerEvent: {}
+[4.535710] (-) TimerEvent: {}
+[4.639735] (-) TimerEvent: {}
+[4.743726] (-) TimerEvent: {}
+[4.844643] (-) TimerEvent: {}
+[4.945310] (-) TimerEvent: {}
+[5.046015] (-) TimerEvent: {}
+[5.147709] (-) TimerEvent: {}
+[5.251752] (-) TimerEvent: {}
+[5.352398] (-) TimerEvent: {}
+[5.453029] (-) TimerEvent: {}
+[5.553630] (-) TimerEvent: {}
+[5.655718] (-) TimerEvent: {}
+[5.756319] (-) TimerEvent: {}
+[5.859730] (-) TimerEvent: {}
+[5.963722] (-) TimerEvent: {}
+[6.067748] (-) TimerEvent: {}
+[6.168341] (-) TimerEvent: {}
+[6.268972] (-) TimerEvent: {}
+[6.369927] (-) TimerEvent: {}
+[6.470898] (-) TimerEvent: {}
+[6.571941] (-) TimerEvent: {}
+[6.673125] (-) TimerEvent: {}
+[6.774193] (-) TimerEvent: {}
+[6.875214] (-) TimerEvent: {}
+[6.976332] (-) TimerEvent: {}
+[7.077306] (-) TimerEvent: {}
+[7.180611] (-) TimerEvent: {}
+[7.281784] (-) TimerEvent: {}
+[7.382809] (-) TimerEvent: {}
+[7.484048] (-) TimerEvent: {}
+[7.584968] (-) TimerEvent: {}
+[7.685869] (-) TimerEvent: {}
+[7.786800] (-) TimerEvent: {}
+[7.888899] (-) TimerEvent: {}
+[7.989912] (-) TimerEvent: {}
+[8.090956] (-) TimerEvent: {}
+[8.192418] (-) TimerEvent: {}
+[8.293590] (-) TimerEvent: {}
+[8.394589] (-) TimerEvent: {}
+[8.498895] (-) TimerEvent: {}
+[8.599997] (-) TimerEvent: {}
+[8.700853] (-) TimerEvent: {}
+[8.801669] (-) TimerEvent: {}
+[8.902484] (-) TimerEvent: {}
+[9.003382] (-) TimerEvent: {}
+[9.107741] (-) TimerEvent: {}
+[9.222722] (-) TimerEvent: {}
+[9.324933] (-) TimerEvent: {}
+[9.425564] (-) TimerEvent: {}
+[9.528037] (-) TimerEvent: {}
+[9.629120] (-) TimerEvent: {}
+[9.730187] (-) TimerEvent: {}
+[9.831341] (-) TimerEvent: {}
+[9.932333] (-) TimerEvent: {}
+[10.033231] (-) TimerEvent: {}
+[10.134098] (-) TimerEvent: {}
+[10.234998] (-) TimerEvent: {}
+[10.335807] (-) TimerEvent: {}
+[10.436663] (-) TimerEvent: {}
+[10.537503] (-) TimerEvent: {}
+[10.638655] (-) TimerEvent: {}
+[10.739728] (-) TimerEvent: {}
+[10.840571] (-) TimerEvent: {}
+[10.941407] (-) TimerEvent: {}
+[11.042298] (-) TimerEvent: {}
+[11.143208] (-) TimerEvent: {}
+[11.244048] (-) TimerEvent: {}
+[11.347026] (-) TimerEvent: {}
+[11.448019] (-) TimerEvent: {}
+[11.548939] (-) TimerEvent: {}
+[11.649822] (-) TimerEvent: {}
+[11.750700] (-) TimerEvent: {}
+[11.851568] (-) TimerEvent: {}
+[11.952465] (-) TimerEvent: {}
+[12.053302] (-) TimerEvent: {}
+[12.154418] (-) TimerEvent: {}
+[12.258556] (-) TimerEvent: {}
+[12.359141] (-) TimerEvent: {}
+[12.459817] (-) TimerEvent: {}
+[12.560483] (-) TimerEvent: {}
+[12.663814] (-) TimerEvent: {}
+[12.764582] (-) TimerEvent: {}
+[12.865356] (-) TimerEvent: {}
+[12.966179] (-) TimerEvent: {}
+[13.068686] (-) TimerEvent: {}
+[13.169313] (-) TimerEvent: {}
+[13.270158] (-) TimerEvent: {}
+[13.371111] (-) TimerEvent: {}
+[13.471983] (-) TimerEvent: {}
+[13.572982] (-) TimerEvent: {}
+[13.585987] (assignment) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/assignment/src/deliver_action_node.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual void DeliverAction::do_work()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[13.588386] (assignment) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/assignment/src/deliver_action_node.cpp:39:44:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[Kmin(double, float&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[13.589150] (assignment) StderrLine: {'line': b'   39 |       send_feedback(std::min(1.0, progress_\x1b[01;31m\x1b[K)\x1b[m\x1b[K, "deliver running");\n'}
+[13.589769] (assignment) StderrLine: {'line': b'      |                                            \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[13.590364] (assignment) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/9/memory:62\x1b[m\x1b[K,\n'}
+[13.590945] (assignment) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/assignment/src/deliver_action_node.cpp:15\x1b[m\x1b[K:\n'}
+[13.591526] (assignment) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/stl_algobase.h:198:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> constexpr const _Tp& std::min(const _Tp&, const _Tp&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[13.592155] (assignment) StderrLine: {'line': b'  198 |     \x1b[01;36m\x1b[Kmin\x1b[m\x1b[K(const _Tp& __a, const _Tp& __b)\n'}
+[13.592729] (assignment) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[13.593302] (assignment) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/stl_algobase.h:198:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[13.593882] (assignment) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/assignment/src/deliver_action_node.cpp:39:44:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  deduced conflicting types for parameter \xe2\x80\x98\x1b[01m\x1b[Kconst _Tp\x1b[m\x1b[K\xe2\x80\x99 (\xe2\x80\x98\x1b[01m\x1b[Kdouble\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kfloat\x1b[m\x1b[K\xe2\x80\x99)\n'}
+[13.594485] (assignment) StderrLine: {'line': b'   39 |       send_feedback(std::min(1.0, progress_\x1b[01;36m\x1b[K)\x1b[m\x1b[K, "deliver running");\n'}
+[13.595058] (assignment) StderrLine: {'line': b'      |                                            \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[13.595672] (assignment) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/9/memory:62\x1b[m\x1b[K,\n'}
+[13.596262] (assignment) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/assignment/src/deliver_action_node.cpp:15\x1b[m\x1b[K:\n'}
+[13.596835] (assignment) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/stl_algobase.h:246:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp, class _Compare> constexpr const _Tp& std::min(const _Tp&, const _Tp&, _Compare)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[13.597410] (assignment) StderrLine: {'line': b'  246 |     \x1b[01;36m\x1b[Kmin\x1b[m\x1b[K(const _Tp& __a, const _Tp& __b, _Compare __comp)\n'}
+[13.597983] (assignment) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[13.598552] (assignment) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/stl_algobase.h:246:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[13.599122] (assignment) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/assignment/src/deliver_action_node.cpp:39:44:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  deduced conflicting types for parameter \xe2\x80\x98\x1b[01m\x1b[Kconst _Tp\x1b[m\x1b[K\xe2\x80\x99 (\xe2\x80\x98\x1b[01m\x1b[Kdouble\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kfloat\x1b[m\x1b[K\xe2\x80\x99)\n'}
+[13.599732] (assignment) StderrLine: {'line': b'   39 |       send_feedback(std::min(1.0, progress_\x1b[01;36m\x1b[K)\x1b[m\x1b[K, "deliver running");\n'}
+[13.600364] (assignment) StderrLine: {'line': b'      |                                            \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[13.602674] (assignment) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/9/algorithm:62\x1b[m\x1b[K,\n'}
+[13.603489] (assignment) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/assignment/src/deliver_action_node.cpp:16\x1b[m\x1b[K:\n'}
+[13.604291] (assignment) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/stl_algo.h:3444:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> constexpr _Tp std::min(std::initializer_list<_Tp>)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[13.616248] (assignment) StderrLine: {'line': b' 3444 |     \x1b[01;36m\x1b[Kmin\x1b[m\x1b[K(initializer_list<_Tp> __l)\n'}
+[13.616962] (assignment) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[13.617607] (assignment) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/stl_algo.h:3444:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[13.618282] (assignment) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/assignment/src/deliver_action_node.cpp:39:44:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  mismatched types \xe2\x80\x98\x1b[01m\x1b[Kstd::initializer_list<_Tp>\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kdouble\x1b[m\x1b[K\xe2\x80\x99\n'}
+[13.618933] (assignment) StderrLine: {'line': b'   39 |       send_feedback(std::min(1.0, progress_\x1b[01;36m\x1b[K)\x1b[m\x1b[K, "deliver running");\n'}
+[13.619558] (assignment) StderrLine: {'line': b'      |                                            \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[13.620207] (assignment) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/9/algorithm:62\x1b[m\x1b[K,\n'}
+[13.620829] (assignment) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/assignment/src/deliver_action_node.cpp:16\x1b[m\x1b[K:\n'}
+[13.621465] (assignment) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/stl_algo.h:3450:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp, class _Compare> constexpr _Tp std::min(std::initializer_list<_Tp>, _Compare)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[13.622120] (assignment) StderrLine: {'line': b' 3450 |     \x1b[01;36m\x1b[Kmin\x1b[m\x1b[K(initializer_list<_Tp> __l, _Compare __comp)\n'}
+[13.622737] (assignment) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[13.623356] (assignment) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/stl_algo.h:3450:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[13.624045] (assignment) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/assignment/src/deliver_action_node.cpp:39:44:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  mismatched types \xe2\x80\x98\x1b[01m\x1b[Kstd::initializer_list<_Tp>\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kdouble\x1b[m\x1b[K\xe2\x80\x99\n'}
+[13.624681] (assignment) StderrLine: {'line': b'   39 |       send_feedback(std::min(1.0, progress_\x1b[01;36m\x1b[K)\x1b[m\x1b[K, "deliver running");\n'}
+[13.625300] (assignment) StderrLine: {'line': b'      |                                            \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[13.673135] (-) TimerEvent: {}
+[13.773863] (-) TimerEvent: {}
+[13.842330] (assignment) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/assignment/src/pick_up_action_node.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual void PickUpAction::do_work()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[13.843924] (assignment) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/assignment/src/pick_up_action_node.cpp:39:44:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[Kmin(double, float&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[13.844676] (assignment) StderrLine: {'line': b'   39 |       send_feedback(std::min(1.0, progress_\x1b[01;31m\x1b[K)\x1b[m\x1b[K, "Pick_up running");\n'}
+[13.845336] (assignment) StderrLine: {'line': b'      |                                            \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[13.845981] (assignment) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/9/memory:62\x1b[m\x1b[K,\n'}
+[13.846615] (assignment) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/assignment/src/pick_up_action_node.cpp:15\x1b[m\x1b[K:\n'}
+[13.847255] (assignment) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/stl_algobase.h:198:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> constexpr const _Tp& std::min(const _Tp&, const _Tp&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[13.847924] (assignment) StderrLine: {'line': b'  198 |     \x1b[01;36m\x1b[Kmin\x1b[m\x1b[K(const _Tp& __a, const _Tp& __b)\n'}
+[13.848551] (assignment) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[13.849164] (assignment) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/stl_algobase.h:198:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[13.849778] (assignment) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/assignment/src/pick_up_action_node.cpp:39:44:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  deduced conflicting types for parameter \xe2\x80\x98\x1b[01m\x1b[Kconst _Tp\x1b[m\x1b[K\xe2\x80\x99 (\xe2\x80\x98\x1b[01m\x1b[Kdouble\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kfloat\x1b[m\x1b[K\xe2\x80\x99)\n'}
+[13.850413] (assignment) StderrLine: {'line': b'   39 |       send_feedback(std::min(1.0, progress_\x1b[01;36m\x1b[K)\x1b[m\x1b[K, "Pick_up running");\n'}
+[13.851038] (assignment) StderrLine: {'line': b'      |                                            \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[13.851719] (assignment) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/9/memory:62\x1b[m\x1b[K,\n'}
+[13.852358] (assignment) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/assignment/src/pick_up_action_node.cpp:15\x1b[m\x1b[K:\n'}
+[13.852987] (assignment) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/stl_algobase.h:246:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp, class _Compare> constexpr const _Tp& std::min(const _Tp&, const _Tp&, _Compare)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[13.853630] (assignment) StderrLine: {'line': b'  246 |     \x1b[01;36m\x1b[Kmin\x1b[m\x1b[K(const _Tp& __a, const _Tp& __b, _Compare __comp)\n'}
+[13.854254] (assignment) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[13.854873] (assignment) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/stl_algobase.h:246:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[13.855505] (assignment) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/assignment/src/pick_up_action_node.cpp:39:44:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  deduced conflicting types for parameter \xe2\x80\x98\x1b[01m\x1b[Kconst _Tp\x1b[m\x1b[K\xe2\x80\x99 (\xe2\x80\x98\x1b[01m\x1b[Kdouble\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kfloat\x1b[m\x1b[K\xe2\x80\x99)\n'}
+[13.856372] (assignment) StderrLine: {'line': b'   39 |       send_feedback(std::min(1.0, progress_\x1b[01;36m\x1b[K)\x1b[m\x1b[K, "Pick_up running");\n'}
+[13.857035] (assignment) StderrLine: {'line': b'      |                                            \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[13.857674] (assignment) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/9/algorithm:62\x1b[m\x1b[K,\n'}
+[13.860100] (assignment) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/assignment/src/pick_up_action_node.cpp:16\x1b[m\x1b[K:\n'}
+[13.860587] (assignment) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/stl_algo.h:3444:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> constexpr _Tp std::min(std::initializer_list<_Tp>)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[13.861002] (assignment) StderrLine: {'line': b' 3444 |     \x1b[01;36m\x1b[Kmin\x1b[m\x1b[K(initializer_list<_Tp> __l)\n'}
+[13.861419] (assignment) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[13.861813] (assignment) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/stl_algo.h:3444:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[13.862209] (assignment) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/assignment/src/pick_up_action_node.cpp:39:44:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  mismatched types \xe2\x80\x98\x1b[01m\x1b[Kstd::initializer_list<_Tp>\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kdouble\x1b[m\x1b[K\xe2\x80\x99\n'}
+[13.872066] (assignment) StderrLine: {'line': b'   39 |       send_feedback(std::min(1.0, progress_\x1b[01;36m\x1b[K)\x1b[m\x1b[K, "Pick_up running");\n'}
+[13.872506] (assignment) StderrLine: {'line': b'      |                                            \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[13.872893] (assignment) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/9/algorithm:62\x1b[m\x1b[K,\n'}
+[13.873261] (assignment) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/assignment/src/pick_up_action_node.cpp:16\x1b[m\x1b[K:\n'}
+[13.873629] (assignment) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/stl_algo.h:3450:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp, class _Compare> constexpr _Tp std::min(std::initializer_list<_Tp>, _Compare)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[13.873977] (-) TimerEvent: {}
+[13.874293] (assignment) StderrLine: {'line': b' 3450 |     \x1b[01;36m\x1b[Kmin\x1b[m\x1b[K(initializer_list<_Tp> __l, _Compare __comp)\n'}
+[13.874672] (assignment) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[13.875032] (assignment) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/stl_algo.h:3450:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[13.875389] (assignment) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/assignment/src/pick_up_action_node.cpp:39:44:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  mismatched types \xe2\x80\x98\x1b[01m\x1b[Kstd::initializer_list<_Tp>\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kdouble\x1b[m\x1b[K\xe2\x80\x99\n'}
+[13.875807] (assignment) StderrLine: {'line': b'   39 |       send_feedback(std::min(1.0, progress_\x1b[01;36m\x1b[K)\x1b[m\x1b[K, "Pick_up running");\n'}
+[13.876179] (assignment) StderrLine: {'line': b'      |                                            \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[13.974160] (-) TimerEvent: {}
+[14.074780] (-) TimerEvent: {}
+[14.122169] (assignment) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/assignment/src/move_carrier_action_node.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual void MoveCarrierAction::do_work()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[14.123182] (assignment) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/assignment/src/move_carrier_action_node.cpp:39:44:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[Kmin(double, float&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[14.124045] (assignment) StderrLine: {'line': b'   39 |       send_feedback(std::min(1.0, progress_\x1b[01;31m\x1b[K)\x1b[m\x1b[K, "move_carrier running");\n'}
+[14.124881] (assignment) StderrLine: {'line': b'      |                                            \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[14.125766] (assignment) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/9/memory:62\x1b[m\x1b[K,\n'}
+[14.126558] (assignment) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/assignment/src/move_carrier_action_node.cpp:15\x1b[m\x1b[K:\n'}
+[14.127291] (assignment) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/stl_algobase.h:198:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> constexpr const _Tp& std::min(const _Tp&, const _Tp&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[14.128047] (assignment) StderrLine: {'line': b'  198 |     \x1b[01;36m\x1b[Kmin\x1b[m\x1b[K(const _Tp& __a, const _Tp& __b)\n'}
+[14.128984] (assignment) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[14.129719] (assignment) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/stl_algobase.h:198:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[14.130457] (assignment) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/assignment/src/move_carrier_action_node.cpp:39:44:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  deduced conflicting types for parameter \xe2\x80\x98\x1b[01m\x1b[Kconst _Tp\x1b[m\x1b[K\xe2\x80\x99 (\xe2\x80\x98\x1b[01m\x1b[Kdouble\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kfloat\x1b[m\x1b[K\xe2\x80\x99)\n'}
+[14.131192] (assignment) StderrLine: {'line': b'   39 |       send_feedback(std::min(1.0, progress_\x1b[01;36m\x1b[K)\x1b[m\x1b[K, "move_carrier running");\n'}
+[14.132102] (assignment) StderrLine: {'line': b'      |                                            \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[14.132841] (assignment) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/9/memory:62\x1b[m\x1b[K,\n'}
+[14.133703] (assignment) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/assignment/src/move_carrier_action_node.cpp:15\x1b[m\x1b[K:\n'}
+[14.134436] (assignment) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/stl_algobase.h:246:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp, class _Compare> constexpr const _Tp& std::min(const _Tp&, const _Tp&, _Compare)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[14.135159] (assignment) StderrLine: {'line': b'  246 |     \x1b[01;36m\x1b[Kmin\x1b[m\x1b[K(const _Tp& __a, const _Tp& __b, _Compare __comp)\n'}
+[14.135890] (assignment) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[14.136631] (assignment) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/stl_algobase.h:246:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[14.144583] (assignment) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/assignment/src/move_carrier_action_node.cpp:39:44:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  deduced conflicting types for parameter \xe2\x80\x98\x1b[01m\x1b[Kconst _Tp\x1b[m\x1b[K\xe2\x80\x99 (\xe2\x80\x98\x1b[01m\x1b[Kdouble\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kfloat\x1b[m\x1b[K\xe2\x80\x99)\n'}
+[14.145411] (assignment) StderrLine: {'line': b'   39 |       send_feedback(std::min(1.0, progress_\x1b[01;36m\x1b[K)\x1b[m\x1b[K, "move_carrier running");\n'}
+[14.146169] (assignment) StderrLine: {'line': b'      |                                            \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[14.146904] (assignment) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/9/algorithm:62\x1b[m\x1b[K,\n'}
+[14.147659] (assignment) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/assignment/src/move_carrier_action_node.cpp:16\x1b[m\x1b[K:\n'}
+[14.148728] (assignment) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/stl_algo.h:3444:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> constexpr _Tp std::min(std::initializer_list<_Tp>)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[14.149534] (assignment) StderrLine: {'line': b' 3444 |     \x1b[01;36m\x1b[Kmin\x1b[m\x1b[K(initializer_list<_Tp> __l)\n'}
+[14.150310] (assignment) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[14.151074] (assignment) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/stl_algo.h:3444:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[14.151852] (assignment) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/assignment/src/move_carrier_action_node.cpp:39:44:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  mismatched types \xe2\x80\x98\x1b[01m\x1b[Kstd::initializer_list<_Tp>\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kdouble\x1b[m\x1b[K\xe2\x80\x99\n'}
+[14.152647] (assignment) StderrLine: {'line': b'   39 |       send_feedback(std::min(1.0, progress_\x1b[01;36m\x1b[K)\x1b[m\x1b[K, "move_carrier running");\n'}
+[14.153402] (assignment) StderrLine: {'line': b'      |                                            \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[14.154152] (assignment) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/9/algorithm:62\x1b[m\x1b[K,\n'}
+[14.154894] (assignment) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/assignment/src/move_carrier_action_node.cpp:16\x1b[m\x1b[K:\n'}
+[14.166284] (assignment) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/stl_algo.h:3450:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp, class _Compare> constexpr _Tp std::min(std::initializer_list<_Tp>, _Compare)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[14.167292] (assignment) StderrLine: {'line': b' 3450 |     \x1b[01;36m\x1b[Kmin\x1b[m\x1b[K(initializer_list<_Tp> __l, _Compare __comp)\n'}
+[14.168159] (assignment) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[14.168942] (assignment) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/stl_algo.h:3450:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[14.169770] (assignment) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/assignment/src/move_carrier_action_node.cpp:39:44:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  mismatched types \xe2\x80\x98\x1b[01m\x1b[Kstd::initializer_list<_Tp>\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kdouble\x1b[m\x1b[K\xe2\x80\x99\n'}
+[14.170618] (assignment) StderrLine: {'line': b'   39 |       send_feedback(std::min(1.0, progress_\x1b[01;36m\x1b[K)\x1b[m\x1b[K, "move_carrier running");\n'}
+[14.171609] (assignment) StderrLine: {'line': b'      |                                            \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[14.174942] (-) TimerEvent: {}
+[14.276026] (-) TimerEvent: {}
+[14.377405] (-) TimerEvent: {}
+[14.478501] (-) TimerEvent: {}
+[14.509473] (assignment) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/assignment/src/move_action_node.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual void MoveAction::do_work()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[14.510532] (assignment) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/assignment/src/move_action_node.cpp:39:44:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[Kmin(double, float&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[14.511431] (assignment) StderrLine: {'line': b'   39 |       send_feedback(std::min(1.0, progress_\x1b[01;31m\x1b[K)\x1b[m\x1b[K, "move running");\n'}
+[14.512242] (assignment) StderrLine: {'line': b'      |                                            \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[14.513076] (assignment) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/9/memory:62\x1b[m\x1b[K,\n'}
+[14.513917] (assignment) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/assignment/src/move_action_node.cpp:15\x1b[m\x1b[K:\n'}
+[14.514710] (assignment) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/stl_algobase.h:198:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> constexpr const _Tp& std::min(const _Tp&, const _Tp&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[14.515491] (assignment) StderrLine: {'line': b'  198 |     \x1b[01;36m\x1b[Kmin\x1b[m\x1b[K(const _Tp& __a, const _Tp& __b)\n'}
+[14.516262] (assignment) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[14.517000] (assignment) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/stl_algobase.h:198:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[14.517749] (assignment) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/assignment/src/move_action_node.cpp:39:44:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  deduced conflicting types for parameter \xe2\x80\x98\x1b[01m\x1b[Kconst _Tp\x1b[m\x1b[K\xe2\x80\x99 (\xe2\x80\x98\x1b[01m\x1b[Kdouble\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kfloat\x1b[m\x1b[K\xe2\x80\x99)\n'}
+[14.518521] (assignment) StderrLine: {'line': b'   39 |       send_feedback(std::min(1.0, progress_\x1b[01;36m\x1b[K)\x1b[m\x1b[K, "move running");\n'}
+[14.519257] (assignment) StderrLine: {'line': b'      |                                            \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[14.520013] (assignment) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/9/memory:62\x1b[m\x1b[K,\n'}
+[14.520761] (assignment) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/assignment/src/move_action_node.cpp:15\x1b[m\x1b[K:\n'}
+[14.521514] (assignment) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/stl_algobase.h:246:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp, class _Compare> constexpr const _Tp& std::min(const _Tp&, const _Tp&, _Compare)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[14.522262] (assignment) StderrLine: {'line': b'  246 |     \x1b[01;36m\x1b[Kmin\x1b[m\x1b[K(const _Tp& __a, const _Tp& __b, _Compare __comp)\n'}
+[14.523013] (assignment) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[14.523782] (assignment) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/stl_algobase.h:246:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[14.532314] (assignment) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/assignment/src/move_action_node.cpp:39:44:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  deduced conflicting types for parameter \xe2\x80\x98\x1b[01m\x1b[Kconst _Tp\x1b[m\x1b[K\xe2\x80\x99 (\xe2\x80\x98\x1b[01m\x1b[Kdouble\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kfloat\x1b[m\x1b[K\xe2\x80\x99)\n'}
+[14.533202] (assignment) StderrLine: {'line': b'   39 |       send_feedback(std::min(1.0, progress_\x1b[01;36m\x1b[K)\x1b[m\x1b[K, "move running");\n'}
+[14.533979] (assignment) StderrLine: {'line': b'      |                                            \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[14.534741] (assignment) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/9/algorithm:62\x1b[m\x1b[K,\n'}
+[14.535502] (assignment) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/assignment/src/move_action_node.cpp:16\x1b[m\x1b[K:\n'}
+[14.536430] (assignment) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/stl_algo.h:3444:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> constexpr _Tp std::min(std::initializer_list<_Tp>)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[14.537238] (assignment) StderrLine: {'line': b' 3444 |     \x1b[01;36m\x1b[Kmin\x1b[m\x1b[K(initializer_list<_Tp> __l)\n'}
+[14.538000] (assignment) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[14.538751] (assignment) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/stl_algo.h:3444:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[14.539510] (assignment) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/assignment/src/move_action_node.cpp:39:44:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  mismatched types \xe2\x80\x98\x1b[01m\x1b[Kstd::initializer_list<_Tp>\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kdouble\x1b[m\x1b[K\xe2\x80\x99\n'}
+[14.540313] (assignment) StderrLine: {'line': b'   39 |       send_feedback(std::min(1.0, progress_\x1b[01;36m\x1b[K)\x1b[m\x1b[K, "move running");\n'}
+[14.541058] (assignment) StderrLine: {'line': b'      |                                            \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[14.541825] (assignment) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/9/algorithm:62\x1b[m\x1b[K,\n'}
+[14.542584] (assignment) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/assignment/src/move_action_node.cpp:16\x1b[m\x1b[K:\n'}
+[14.543334] (assignment) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/stl_algo.h:3450:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp, class _Compare> constexpr _Tp std::min(std::initializer_list<_Tp>, _Compare)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[14.552334] (assignment) StderrLine: {'line': b' 3450 |     \x1b[01;36m\x1b[Kmin\x1b[m\x1b[K(initializer_list<_Tp> __l, _Compare __comp)\n'}
+[14.553184] (assignment) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[14.554856] (assignment) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/stl_algo.h:3450:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[14.555792] (assignment) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/assignment/src/move_action_node.cpp:39:44:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  mismatched types \xe2\x80\x98\x1b[01m\x1b[Kstd::initializer_list<_Tp>\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kdouble\x1b[m\x1b[K\xe2\x80\x99\n'}
+[14.556607] (assignment) StderrLine: {'line': b'   39 |       send_feedback(std::min(1.0, progress_\x1b[01;36m\x1b[K)\x1b[m\x1b[K, "move running");\n'}
+[14.557379] (assignment) StderrLine: {'line': b'      |                                            \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[14.578878] (-) TimerEvent: {}
+[14.679718] (-) TimerEvent: {}
+[14.780462] (-) TimerEvent: {}
+[14.881217] (-) TimerEvent: {}
+[14.981972] (-) TimerEvent: {}
+[15.082729] (-) TimerEvent: {}
+[15.183466] (-) TimerEvent: {}
+[15.291741] (-) TimerEvent: {}
+[15.394051] (-) TimerEvent: {}
+[15.495062] (-) TimerEvent: {}
+[15.595877] (-) TimerEvent: {}
+[15.608543] (assignment) StderrLine: {'line': b'make[2]: *** [CMakeFiles/deliver_action_node.dir/build.make:63: CMakeFiles/deliver_action_node.dir/src/deliver_action_node.cpp.o] Error 1\n'}
+[15.609502] (assignment) StderrLine: {'line': b'make[1]: *** [CMakeFiles/Makefile2:111: CMakeFiles/deliver_action_node.dir/all] Error 2\n'}
+[15.610240] (assignment) StderrLine: {'line': b'make[1]: *** Waiting for unfinished jobs....\n'}
+[15.634955] (assignment) StderrLine: {'line': b'make[2]: *** [CMakeFiles/pick_up_action_node.dir/build.make:63: CMakeFiles/pick_up_action_node.dir/src/pick_up_action_node.cpp.o] Error 1\n'}
+[15.635556] (assignment) StderrLine: {'line': b'make[1]: *** [CMakeFiles/Makefile2:192: CMakeFiles/pick_up_action_node.dir/all] Error 2\n'}
+[15.696025] (-) TimerEvent: {}
+[15.796640] (-) TimerEvent: {}
+[15.820667] (assignment) StderrLine: {'line': b'make[2]: *** [CMakeFiles/move_carrier_action_node.dir/build.make:63: CMakeFiles/move_carrier_action_node.dir/src/move_carrier_action_node.cpp.o] Error 1\n'}
+[15.821360] (assignment) StderrLine: {'line': b'make[1]: *** [CMakeFiles/Makefile2:84: CMakeFiles/move_carrier_action_node.dir/all] Error 2\n'}
+[15.896846] (-) TimerEvent: {}
+[15.997398] (-) TimerEvent: {}
+[16.092143] (assignment) StderrLine: {'line': b'make[2]: *** [CMakeFiles/move_action_node.dir/build.make:63: CMakeFiles/move_action_node.dir/src/move_action_node.cpp.o] Error 1\n'}
+[16.092945] (assignment) StderrLine: {'line': b'make[1]: *** [CMakeFiles/Makefile2:138: CMakeFiles/move_action_node.dir/all] Error 2\n'}
+[16.093565] (assignment) StderrLine: {'line': b'make: *** [Makefile:141: all] Error 2\n'}
+[16.097773] (-) TimerEvent: {}
+[16.100430] (assignment) CommandEnded: {'returncode': 2}
+[16.197920] (-) TimerEvent: {}
+[16.273295] (assignment) JobEnded: {'identifier': 'assignment', 'rc': 2}
+[16.285355] (-) EventReactorShutdown: {}

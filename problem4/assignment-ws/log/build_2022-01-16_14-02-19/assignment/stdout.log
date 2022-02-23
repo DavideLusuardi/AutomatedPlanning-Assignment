@@ -1,0 +1,8 @@
+[35m[1mScanning dependencies of target move_carrier_action_node[0m
+[35m[1mScanning dependencies of target pick_up_action_node[0m
+[35m[1mScanning dependencies of target deliver_action_node[0m
+[35m[1mScanning dependencies of target move_action_node[0m
+[ 12%] [32mBuilding CXX object CMakeFiles/move_carrier_action_node.dir/src/move_carrier_action_node.cpp.o[0m
+[ 25%] [32mBuilding CXX object CMakeFiles/pick_up_action_node.dir/src/pick_up_action_node.cpp.o[0m
+[ 37%] [32mBuilding CXX object CMakeFiles/deliver_action_node.dir/src/deliver_action_node.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/move_action_node.dir/src/move_action_node.cpp.o[0m

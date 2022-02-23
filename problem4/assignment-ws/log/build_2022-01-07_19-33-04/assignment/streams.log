@@ -1,0 +1,100 @@
+[0.051s] Invoking command in '/home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/build/assignment': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake /home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/assignment -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/install/assignment
+[0.317s] -- The C compiler identification is GNU 9.3.0
+[0.514s] -- The CXX compiler identification is GNU 9.3.0
+[0.544s] -- Check for working C compiler: /usr/bin/cc
+[0.793s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.799s] -- Detecting C compiler ABI info
+[1.069s] -- Detecting C compiler ABI info - done
+[1.124s] -- Detecting C compile features
+[1.130s] -- Detecting C compile features - done
+[1.140s] -- Check for working CXX compiler: /usr/bin/c++
+[1.372s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[1.375s] -- Detecting CXX compiler ABI info
+[1.594s] -- Detecting CXX compiler ABI info - done
+[1.636s] -- Detecting CXX compile features
+[1.637s] -- Detecting CXX compile features - done
+[1.652s] -- Found ament_cmake: 0.9.9 (/opt/ros/foxy/share/ament_cmake/cmake)
+[1.742s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[1.742s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[2.239s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[2.353s] -- Found rclcpp: 2.4.0 (/opt/ros/foxy/share/rclcpp/cmake)
+[2.576s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.604s] -- Found rosidl_adapter: 1.2.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[2.917s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[3.023s] -- Found FastRTPS: /opt/ros/foxy/include  
+[3.379s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[3.578s] -- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[3.588s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[3.591s] -- Looking for pthread.h
+[3.805s] -- Looking for pthread.h - found
+[3.810s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[4.008s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[4.008s] -- Looking for pthread_create in pthreads
+[4.190s] -- Looking for pthread_create in pthreads - not found
+[4.191s] -- Looking for pthread_create in pthread
+[4.421s] -- Looking for pthread_create in pthread - found
+[4.424s] -- Found Threads: TRUE  
+[5.066s] -- Found rclcpp_action: 2.4.0 (/opt/ros/foxy/share/rclcpp_action/cmake)
+[5.455s] -- Found plansys2_msgs: 2.0.0 (/home/hp/plansys2_ws/install/plansys2_msgs/share/plansys2_msgs/cmake)
+[5.828s] -- Found plansys2_executor: 2.0.0 (/home/hp/plansys2_ws/install/plansys2_executor/share/plansys2_executor/cmake)
+[13.072s] -- Found ament_lint_auto: 0.9.6 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[13.307s] -- Added test 'copyright' to check source files copyright and LICENSE
+[13.311s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[13.313s] -- Configured cppcheck include dirs: 
+[13.314s] -- Configured cppcheck exclude dirs and/or files: 
+[13.317s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[13.317s] -- Configured cpplint exclude dirs and/or files: 
+[13.319s] -- Added test 'flake8' to check Python code syntax and style conventions
+[13.321s] -- Added test 'lint_cmake' to check CMake code style
+[13.323s] -- Added test 'pep257' to check Python code against some of the style conventions in PEP 257
+[13.326s] -- Added test 'uncrustify' to check C / C++ code style
+[13.326s] -- Configured uncrustify additional arguments: 
+[13.328s] -- Added test 'xmllint' to check XML markup files
+[13.341s] -- Configuring done
+[13.549s] -- Generating done
+[13.555s] -- Build files have been written to: /home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/build/assignment
+[13.578s] Invoked command in '/home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/build/assignment' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake /home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/assignment -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/install/assignment
+[13.588s] Invoking command in '/home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/build/assignment': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/build/assignment -- -j4 -l4
+[13.769s] [35m[1mScanning dependencies of target deliver_action_node[0m
+[13.799s] [35m[1mScanning dependencies of target move_action_node[0m
+[13.799s] [35m[1mScanning dependencies of target move_carrier_action_node[0m
+[13.802s] [35m[1mScanning dependencies of target pick_up_action_node[0m
+[14.081s] [ 12%] [32mBuilding CXX object CMakeFiles/move_action_node.dir/src/move_action_node.cpp.o[0m
+[14.333s] [ 37%] [32mBuilding CXX object CMakeFiles/deliver_action_node.dir/src/deliver_action_node.cpp.o[0m
+[14.334s] [ 37%] [32mBuilding CXX object CMakeFiles/move_carrier_action_node.dir/src/move_carrier_action_node.cpp.o[0m
+[14.553s] [ 50%] [32mBuilding CXX object CMakeFiles/pick_up_action_node.dir/src/pick_up_action_node.cpp.o[0m
+[26.689s] [ 75%] [32m[1mLinking CXX executable move_action_node[0m
+[26.690s] [ 75%] [32m[1mLinking CXX executable move_carrier_action_node[0m
+[27.018s] [ 87%] [32m[1mLinking CXX executable pick_up_action_node[0m
+[27.031s] [100%] [32m[1mLinking CXX executable deliver_action_node[0m
+[29.663s] [100%] Built target deliver_action_node
+[29.695s] [100%] Built target move_carrier_action_node
+[29.702s] [100%] Built target move_action_node
+[29.703s] [100%] Built target pick_up_action_node
+[29.743s] Invoked command in '/home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/build/assignment' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/build/assignment -- -j4 -l4
+[29.885s] Invoking command in '/home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/build/assignment': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/build/assignment
+[29.923s] -- Install configuration: ""
+[29.923s] -- Execute custom install script
+[29.929s] -- Symlinking: /home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/install/assignment/share/assignment/launch/assignment_launch.py
+[29.954s] -- Symlinking: /home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/install/assignment/share/assignment/pddl/assignment-domain3.pddl
+[29.983s] -- Symlinking: /home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/install/assignment/lib/assignment/deliver_action_node
+[30.014s] -- Symlinking: /home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/install/assignment/lib/assignment/move_action_node
+[30.045s] -- Symlinking: /home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/install/assignment/lib/assignment/move_carrier_action_node
+[30.067s] -- Symlinking: /home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/install/assignment/lib/assignment/pick_up_action_node
+[30.101s] -- Symlinking: /home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/install/assignment/share/ament_index/resource_index/package_run_dependencies/assignment
+[30.136s] -- Symlinking: /home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/install/assignment/share/ament_index/resource_index/parent_prefix_path/assignment
+[30.169s] -- Symlinking: /home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/install/assignment/share/assignment/environment/ament_prefix_path.sh
+[30.200s] -- Symlinking: /home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/install/assignment/share/assignment/environment/ament_prefix_path.dsv
+[30.230s] -- Symlinking: /home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/install/assignment/share/assignment/environment/path.sh
+[30.262s] -- Symlinking: /home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/install/assignment/share/assignment/environment/path.dsv
+[30.285s] -- Symlinking: /home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/install/assignment/share/assignment/local_setup.bash
+[30.313s] -- Symlinking: /home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/install/assignment/share/assignment/local_setup.sh
+[30.339s] -- Symlinking: /home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/install/assignment/share/assignment/local_setup.zsh
+[30.370s] -- Symlinking: /home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/install/assignment/share/assignment/local_setup.dsv
+[30.401s] -- Symlinking: /home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/install/assignment/share/assignment/package.dsv
+[30.427s] -- Symlinking: /home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/install/assignment/share/ament_index/resource_index/packages/assignment
+[30.458s] -- Symlinking: /home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/install/assignment/share/assignment/cmake/ament_cmake_export_dependencies-extras.cmake
+[30.484s] -- Symlinking: /home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/install/assignment/share/assignment/cmake/assignmentConfig.cmake
+[30.513s] -- Symlinking: /home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/install/assignment/share/assignment/cmake/assignmentConfig-version.cmake
+[30.550s] -- Symlinking: /home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/install/assignment/share/assignment/package.xml
+[30.594s] Invoked command in '/home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/build/assignment' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/hp/Documenti/APTP/AutomatedPlanning-Assignment-master/assignment-ws/build/assignment
