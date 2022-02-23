@@ -16,10 +16,10 @@
         (robot_at ?r - robot ?l - location)     ;robot r is at location l
         (person_at ?p - person ?l - location)   ;person p is at location l
         (crate_at ?c - crate ?l - location)     ;crate c is at location l
-        (contain ?c - crate ?co - content)      ;crate c has content co (TODO: assume contains only one content)
+        (contain ?c - crate ?co - content)      ;crate c has content co
         (available ?c - crate)                  ;crate c has not been delivered yet
-        (need ?p - person ?co - content)        ;person p needs content co (TODO: no need content already had)
-        (have ?p - person ?co - content)        ;person p has content co (TODO: can need co even if it has co?)
+        (need ?p - person ?co - content)        ;person p needs content co
+        (have ?p - person ?co - content)        ;person p has content co
         (hold ?r - robot ?c - crate)            ;robot r holds crate c
         (empty ?r - robot)                      ;robot r is empty
     )

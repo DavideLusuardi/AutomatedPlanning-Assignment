@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2021.8.19)  23 FEB 2022 12:06
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2021.8.19)  23 FEB 2022 19:33
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -613,27 +613,27 @@ LaTeX Font Info:    Font shape `OT1/pcr/bx/n' in size <9> not available
 
 
 ]) (/home/davide/Documents/UniTN/AIS/Automated Planning/AutomatedPlanning-Assignment/report/sec03_design_choices.tex
-Underfull \hbox (badness 1515) in paragraph at lines 36--41
-\OT1/ptm/m/n/10 could sim-ply use just one pred-i-cate to ex-press ob-jects
+Underfull \hbox (badness 1383) in paragraph at lines 33--40
+\OT1/ptm/m/n/10 robotic agents, peo-ple and crates, ap-pro-pri-ate pred-i-cates
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 36--41
-\OT1/ptm/m/n/10 de-fined the pred-i-cates \OT1/pcr/m/n/10 (robot_at ?r - robot ?l
+Underfull \hbox (badness 2376) in paragraph at lines 33--40
+\OT1/ptm/m/n/10 have de-fined the pred-i-cates \OT1/pcr/m/n/10 (robot_at ?r - robot
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 36--41
-\OT1/pcr/m/n/10 - location)\OT1/ptm/m/n/10 , \OT1/pcr/m/n/10 (person_at ?p - person ?l -
+Underfull \hbox (badness 10000) in paragraph at lines 33--40
+\OT1/pcr/m/n/10 ?l - location)\OT1/ptm/m/n/10 , \OT1/pcr/m/n/10 (person_at ?p - person ?l
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 36--41
-\OT1/pcr/m/n/10 location) \OT1/ptm/m/n/10 and \OT1/pcr/m/n/10 (crate_at ?c - crate ?l -
+Underfull \hbox (badness 10000) in paragraph at lines 33--40
+\OT1/pcr/m/n/10 - location) \OT1/ptm/m/n/10 and \OT1/pcr/m/n/10 (crate_at ?c - crate ?l -
  []
 
 
-Underfull \hbox (badness 1735) in paragraph at lines 71--81
+Underfull \hbox (badness 1735) in paragraph at lines 67--78
 []\OT1/ptm/m/n/10 From Prob-lem 2 on, the in-tro-duc-tion of the car-rier,
  []
 
@@ -641,12 +641,12 @@ Underfull \hbox (badness 1735) in paragraph at lines 71--81
 <./images/assignment_terminal.png, id=15, 521.95pt x 366.36874pt>
 File: ./images/assignment_terminal.png Graphic file (type png)
 <use ./images/assignment_terminal.png>
-Package pdftex.def Info: ./images/assignment_terminal.png  used on input line 53.
+Package pdftex.def Info: ./images/assignment_terminal.png  used on input line 54.
 (pdftex.def)             Requested size: 234.87532pt x 164.86441pt.
 <./images/assignment_run.png, id=17, 639.38875pt x 606.265pt>
 File: ./images/assignment_run.png Graphic file (type png)
 <use ./images/assignment_run.png>
-Package pdftex.def Info: ./images/assignment_run.png  used on input line 59.
+Package pdftex.def Info: ./images/assignment_run.png  used on input line 60.
 (pdftex.def)             Requested size: 233.37982pt x 221.2895pt.
 ) (/home/davide/Documents/UniTN/AIS/Automated Planning/AutomatedPlanning-Assignment/report/sec05_conclusions.tex) [3 <./images/assignment_terminal.png>]
 
@@ -670,13 +670,13 @@ Package logreq Info: Writing requests to '"report - Davide Lusuardi".run.xml'.
 Here is how much of TeX's memory you used:
  11318 strings out of 492982
  191861 string characters out of 6134896
- 609796 words of memory out of 5000000
+ 611785 words of memory out of 5000000
  14745 multiletter control sequences out of 15000+600000
  34552 words of font info for 68 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  41i,8n,45p,930b,1559s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/urw/courier/ucrb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on "/home/davide/Documents/UniTN/AIS/Automated Planning/AutomatedPlanning-Assignment/report/report - Davide Lusuardi.pdf" (4 pages, 218273 bytes).
+Output written on "/home/davide/Documents/UniTN/AIS/Automated Planning/AutomatedPlanning-Assignment/report/report - Davide Lusuardi.pdf" (4 pages, 218325 bytes).
 PDF statistics:
  47 PDF objects out of 1000 (max. 8388607)
  30 compressed objects within 1 object stream

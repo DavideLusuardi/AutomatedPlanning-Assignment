@@ -8,56 +8,55 @@ The proposed scenario consists of an emergency situation in which there are a nu
 who need emergency supplies.
 % to help delivering them some crates containing
 Each injured person is located in a specific place and may need some kinds of emergency supply
-(e.g. food, medicine, beverage, ...). There may be more people at the same location and some 
+(e.g. food, medicine, beverage). There may be more people at the same location and some 
 locations may be empty.
 Each crate is at a specific location and contains just one specific kind of emergency supply.
 Some people may already have some crates and some others may not need any crate.
 People don't care which crate exactly they get, only the content type is important.
 There can be one or more robotic agents that cooperate in order to deliver crates to people.
-Each location is connected to every other location, so the robotic agent can move directly between them.
+Each location is connected to every other location, so the robotic agents can move directly between them.
 Initially, the robotic agents and the crates are situated at the depot, where there are not injured people.
 
-The goal consists in deliver all the required crates to injured people.
+The goal consists in delivering all the required crates to injured people.
 
-The above considerations and the goal are common for all the four subproblems that we are going to discuss.
+The above considerations and goal are common for all the four subproblems that we are going to discuss.
 
 \subsection{Problem 1}
 This is the easiest problem.
-We have that a single robotic agent is present at the depot.
-It can perform the following actions: pick up and load just one crate that is at the same location;
+Just a single robotic agent is present at the depot and it can perform the following actions: 
+pick up and load just one crate that is at the same location;
 move to another location, moving also the loaded crate if present; 
 deliver the loaded crate to a person that is at the same location of the robot.
 
 \subsection{Problem 2}
-In this subproblem, the robotic agent can move crates in an different way.
+In this subproblem, the robotic agent can move crates in a different way.
 We introduce the concept of carrier that can be loaded with up to a specific number of crates, 
 in this case up to four.
-This number is problem specific and is modeled in the problem file.
+This number is problem specific and is modeled into the problem file.
 At a specific location, the robot can load the carrier with crates situated in that location and can
 deliver loaded crates to people.
-The robot can move to another location bringing a carrier with it or not.
+The robot can move to another location bringing a carrier with it or without moving any carrier.
 % The robotic agent can load the carrier with crates at the same location, can move the carrier to another 
 % location and 
 % At the location of the robot, it can load some crates on the carrier or deliver some others to people.
 
-The difficult part consists in modeling correctly the carrier and its variable capacity.
+Modelling correctly the carrier and its variable capacity has a central role in this problem.
 
 \subsection{Problem 3}
 In this subproblem, it's required to make use of durative actions.
-Reasonable durations should be assigned to actions coherently with their time spans and the possibility 
+Reasonable durations should be assigned to actions coherently with their real time spans and the possibility 
 to execute actions in parallel should be analyzed taking into account real constraints.
 
 \subsection{Problem 4}
-In this subproblem, it's required to integrate the Problem 3 within a robotic setting leveraging the 
+In this subproblem, it's required to integrate the Problem 3 within a robotic setting, leveraging the 
 \texttt{PlanSys2} infrastructure.
 
 \texttt{PlanSys2} is composed of four nodes: the \textit{domain expert} that contains the PDDL model 
 information; the \textit{problem expert} that contains the problem information like current instances,
 predicates and goals; the \textit{planner} that generate the plan; the \textit{executor} that executes
 the plan by activating the action nodes.
-
-Considering this problem, it's required to define the PDDL domain file, implement an action node for 
-each specified action and define the launcher.
+Regarding this problem, it's required to define the PDDL domain file, the terminal commands that specify
+the problem and the goal, an action node for each specified action and the launcher.
 
 % Problem 3 has been integrated within the PlanSys2 infrastructure.
 % TODO: spiegare meglio

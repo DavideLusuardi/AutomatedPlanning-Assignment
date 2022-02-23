@@ -71,22 +71,15 @@ def generate_launch_description():
         output='screen',
         parameters=[])
 
-    pick_up1_cmd = Node(
+    pick_up_cmd = Node(
         package='assignment',
         executable='pick_up_action_node',
-        name='pick_up_action_node1',
+        name='pick_up_action_node',
         namespace=namespace,
         output='screen',
         parameters=[])
 
-    pick_up2_cmd = Node(
-        package='assignment',
-        executable='pick_up_action_node',
-        name='pick_up_action_node2',
-        namespace=namespace,
-        output='screen',
-        parameters=[])
-
+    
     # Create the launch description and populate
     ld = LaunchDescription()
 
@@ -100,7 +93,6 @@ def generate_launch_description():
     ld.add_action(deliver_cmd)
     ld.add_action(move_cmd)
     ld.add_action(move_carrier_cmd)
-    ld.add_action(pick_up1_cmd)
-    ld.add_action(pick_up2_cmd)
+    ld.add_action(pick_up_cmd)
 
     return ld

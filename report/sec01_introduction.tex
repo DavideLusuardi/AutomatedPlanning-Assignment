@@ -2,31 +2,31 @@
 Planning is a branch of Artificial Intelligence that seeks to automate reasoning about
 formulating a plan to achieve a given goal in a given situation. 
 Planning is a model-based approach: a planning system takes as input a model of the initial state, 
-the actions available to change it, and the goal conditions and produces as output a plan 
+the actions available to change it and the goal conditions, producing as output a plan 
 that will reach the goal from the initial situation.
 
 The Planning Domain Definition Language (PDDL) is a formal knowledge representation language 
 designed to express planning models. Developed by the planning research community, 
 it has become a de-facto standard language of many planning systems.
 
-The purpose of the assignment is two-fold. First, model the given scenario using the PDDL language 
-and find a plan using a state of the art planner. Second, leveraging the \texttt{PlanSys2} \cite{PlanSys2} 
-infrastructure, integrate the model within a robotic setting.
+The purpose of the assignment is two-fold: first, to model the given scenario using the PDDL language 
+and find a plan using a state-of-the-art planner; second, leveraging the \texttt{PlanSys2} \cite{PlanSys2} 
+infrastructure, to integrate the model within a robotic setting.
 
 ROS2 Planning System, \texttt{PlanSys2} in short, is a framework for symbolic planning that incorporates 
 novel approaches for execution on robots working in demanding environments \cite{PlanSys2}.
 
-The proposed scenario \cite{assignment} is inspired by an emergency services logistic problem:
+The proposed scenario is inspired by an emergency services logistic problem:
 a number of injured people are situated at known locations and one or more robotic agents
 have the task to deliver crates containing emergency supplies to each person. 
 The planning system should formulate a plan for the robotic agents in order to deliver all
 the crates needed by the injured people.
 
-The document is structured as follows: after this introduction, in Section \ref{sec2} 
+The document is structured as follows: in Section \ref{sec2},
 we explain in details our understanding of the proposed scenario and the four subproblems; 
-in Section \ref{sec3} we describe the design choices and the proposed solutions to solve the problem,
-making some assumptions not written in the assignment document in order to constrain the problem; % TODO: scrivere meglio
-in Section \ref{sec4}, we analyze and criticize the achieved results and briefly describe the
+in Section \ref{sec3}, we describe the design choices and the proposed solutions to solve the problem,
+making some assumptions in order to constrain the problem; % TODO: scrivere meglio
+in Section \ref{sec4}, we discuss and analyze the achieved results and briefly describe the
 content of the submitted archive; in Section \ref{sec5}, we make some conclusions and future 
 works are proposed.
 
