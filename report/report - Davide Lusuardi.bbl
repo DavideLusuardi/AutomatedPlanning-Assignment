@@ -81,6 +81,62 @@
       \field{title}{PlanSys2: A Planning System Framework for ROS2}
       \field{year}{2021}
     \endentry
+    \entry{hddl}{misc}{}
+      \name{author}{7}{}{%
+        {{hash=7cbe272beaf54f5d8496b4c9e954e91d}{%
+           family={Holler},
+           familyi={H\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod}}}%
+        {{hash=874de198d7c5543f085defa813e3b99f}{%
+           family={Behnke},
+           familyi={B\bibinitperiod},
+           given={G.},
+           giveni={G\bibinitperiod}}}%
+        {{hash=3cd94b7c8238f2017e993c3e28bc5a99}{%
+           family={Bercher},
+           familyi={B\bibinitperiod},
+           given={P.},
+           giveni={P\bibinitperiod}}}%
+        {{hash=6d41409f937c95c928ada3fbf9350ab2}{%
+           family={Biundo},
+           familyi={B\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod}}}%
+        {{hash=11578b6581f2536ef82ff5173845318b}{%
+           family={Fiorino},
+           familyi={F\bibinitperiod},
+           given={H.},
+           giveni={H\bibinitperiod}}}%
+        {{hash=5fdef9e81c26c42ef69c88413873b731}{%
+           family={Pellier},
+           familyi={P\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod}}}%
+        {{hash=c3c2f9d242a06732f590f399f796417d}{%
+           family={Alford},
+           familyi={A\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{ca3266571d3db8c55a13b88af87e73cc}
+      \strng{fullhash}{b8742c1300e09983ccde4b6e6d27a9d9}
+      \strng{bibnamehash}{ca3266571d3db8c55a13b88af87e73cc}
+      \strng{authorbibnamehash}{ca3266571d3db8c55a13b88af87e73cc}
+      \strng{authornamehash}{ca3266571d3db8c55a13b88af87e73cc}
+      \strng{authorfullhash}{b8742c1300e09983ccde4b6e6d27a9d9}
+      \field{sortinit}{4}
+      \field{sortinithash}{11cdaee3b18e01d77f3f428b13c1fc76}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{cs.AI}
+      \field{eprinttype}{arXiv}
+      \field{title}{HDDL - A Language to Describe Hierarchical Planning Problems}
+      \field{year}{2019}
+      \verb{eprint}
+      \verb 1911.05499
+      \endverb
+    \endentry
   \enddatalist
 \endrefsection
 \endinput
