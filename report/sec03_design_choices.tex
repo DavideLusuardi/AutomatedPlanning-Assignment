@@ -26,12 +26,10 @@ the same time the person needs food.
 
 Initially, we need to consider the main object types used in the proposed scenario.
 We can simply spot the following types: \texttt{robot}, \texttt{person}, \texttt{crate}, \texttt{location}, 
-\texttt{content}, and, from the Problem 2 on, the assignment introduces the concept of \texttt{carrier}.
+\texttt{content}, and, from the \textit{Problem 2} on, the assignment introduces the concept of \texttt{carrier}.
 % Each type can be easily understood without further explanations. 
-% We can note... TODO
 
 We can now start describing the modeled PDDL predicates, actions and functions.
-% TODO
 In order to model the location of robotic agents, people and crates, appropriate predicates should be defined.
 We could simply use just one predicate to express objects location, but we preferred to define a predicate for 
 each type of object to improve clarity. In this way, we have defined the predicates 
@@ -44,7 +42,7 @@ As we have said, people need specific emergency supplies. To model this fact, th
 \texttt{(need ?p - person ?co - content)} has been defined. The predicate 
 \texttt{(have ?p - person ?co - content)} is used to define that a person has a crate with that content.
 In order to know if a crate has already been delivered, the predicate \texttt{(available ?c - crate)}
-is used: we assume that when a crate is delivered is no more available to be picked up or moved. % TODO: repeated
+is used: we assume that when a crate is delivered is no more available to be picked up or moved.
 This assumption is not strictly required, even if it sounds reasonable, and could be omitted in the modelling.
 
 
@@ -64,7 +62,7 @@ supplies of the same type of the content of the crate, the robot should hold the
 same location of the person.
 
 
-From Problem 2 on, the introduction of the carrier, poses the need to change a bit the model 
+From \textit{Problem 2} on, the introduction of the carrier, poses the need to change a bit the model 
 introducing the \texttt{carrier} type and the \texttt{(carrier\_at ?ca - carrier ?l - location)} predicate.
 Instead, the predicates \texttt{hold} and \texttt{empty} have been removed in favour of the predicate
 \texttt{(load ?ca - carrier ?c - crate)} which indicates that a crate has been loaded into the carrier.
@@ -76,7 +74,7 @@ Instead, the action \texttt{move} indicates now the movement of the robot withou
 This action could be useful, for example if we want to model the fact that the carrier is not initially at 
 the same location of the robot.
 
-In Problem 3, the actions have been transformed into durative actions, specifying appropriate durations.
+In \textit{Problem 3}, the actions have been transformed into durative actions, specifying appropriate durations.
 A constant duration time has been assigned to each action: we decided that \texttt{pick\_up} takes 2 time 
 units to execute, \texttt{deliver} takes just 1 time unit, \texttt{move} takes 3 time units and 
 \texttt{move\_carrier} takes 4 time units since moving a carrier requires more effort.
@@ -94,9 +92,9 @@ actions at the same time.
 % Proper conditions and effects of actions have been implemented in order to enforce this situation, in 
 % particular by the use of the predicate \texttt{free}.
 
-In Problem 4, we have implemented the Problem 3 within the \texttt{PlanSys2} framework.
+In \textit{Problem 4}, we have implemented the \textit{Problem 3} within the \texttt{PlanSys2} framework.
 To do this, we have initially created the project workspace and we have copied within it the PDDL domain 
-file of Problem 3.
+file of \textit{Problem 3}.
 Then we have implemented the four action nodes: they can be defined as \textit{fake actions} in the sense 
 that they do not really make any useful work but they only show to the user the execution progress of the 
 required action. This feedback is given by the function \texttt{do\_work()} that, in
