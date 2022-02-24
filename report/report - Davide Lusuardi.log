@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2021.8.19)  24 FEB 2022 09:19
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2021.8.19)  24 FEB 2022 10:09
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -618,18 +618,18 @@ Underfull \hbox (badness 1383) in paragraph at lines 32--38
  []
 
 
-Underfull \hbox (badness 2376) in paragraph at lines 32--38
-\OT1/ptm/m/n/10 have de-fined the pred-i-cates \OT1/pcr/m/n/10 (robot_at ?r - robot
+Underfull \hbox (badness 1946) in paragraph at lines 32--38
+\OT1/ptm/m/n/10 this way, we have de-fined the pred-i-cates \OT1/pcr/m/n/10 (robot_at
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 32--38
-\OT1/pcr/m/n/10 ?l - location)\OT1/ptm/m/n/10 , \OT1/pcr/m/n/10 (person_at ?p - person ?l
+\OT1/pcr/m/n/10 ?r - robot ?l - location)\OT1/ptm/m/n/10 , \OT1/pcr/m/n/10 (person_at ?p
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 32--38
-\OT1/pcr/m/n/10 - location) \OT1/ptm/m/n/10 and \OT1/pcr/m/n/10 (crate_at ?c - crate ?l -
+Underfull \hbox (badness 2318) in paragraph at lines 32--38
+\OT1/pcr/m/n/10 - person ?l - location) \OT1/ptm/m/n/10 and \OT1/pcr/m/n/10 (crate_at ?c -
  []
 
 
@@ -676,7 +676,7 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  41i,8n,45p,930b,1559s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/urw/courier/ucrb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on "/home/davide/Documents/UniTN/AIS/Automated Planning/AutomatedPlanning-Assignment/report/report - Davide Lusuardi.pdf" (4 pages, 218481 bytes).
+Output written on "/home/davide/Documents/UniTN/AIS/Automated Planning/AutomatedPlanning-Assignment/report/report - Davide Lusuardi.pdf" (4 pages, 218492 bytes).
 PDF statistics:
  47 PDF objects out of 1000 (max. 8388607)
  30 compressed objects within 1 object stream

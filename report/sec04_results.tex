@@ -1,6 +1,6 @@
 \section{Results}
 \label{sec4}
-In this section, we present and analyze the obtained results regarding the execution of the planners on 
+In this section, we present and analyse the obtained results regarding the execution of the planners on 
 the PDDL files.
 
 The submitted archive contains the solutions to the presented problems and it is organized as follows.
@@ -13,13 +13,13 @@ problem.
 
 
 \subsection{Problem 1}
-For this problem, we have modeled two PDDL problem files with increasing complexity.
+For this problem, we have modelled two PDDL problem files with increasing complexity.
 The planner used to found the solution is \texttt{Downward} using the option \texttt{--alias lama-first}.
 
-In the first problem modeled, there are 4 people, 5 crates, 4 locations and the planner successfully
+In the first problem modelled, there are 4 people, 5 crates, 4 locations and the planner successfully
 found an optimal solution that requires the execution of 15 actions.
 
-The second problem modeled is a bit more complex: the number of objects modeled increase to 8 people, 
+The second problem modelled is a bit more complex: the number of objects modelled increase to 8 people, 
 8 crates and 5 locations. Also in this case, the planner successfully
 found an optimal solution that requires the execution of 27 actions.
 
@@ -27,7 +27,7 @@ found an optimal solution that requires the execution of 27 actions.
 \subsection{Problem 2}
 For this problem, the planner used is \texttt{Enhsp-2020} that is available in \texttt{Planutils}.
 
-The modeled PDDL problem contains 6 people, 6 crates, 4 locations and just one carrier with capacity 4.
+The modelled PDDL problem contains 6 people, 6 crates, 4 locations and just one carrier with capacity 4.
 Executing the planner with the option \texttt{-anytime}, it managed to find an optimal solution that 
 requires performing 16 actions.
 
@@ -36,9 +36,9 @@ For this problem, the planner used is \texttt{Optic} that is available in \textt
 
 It has been decided to model two PDDL problem files.
 In the second one, there are two robots and two carriers while in the first one only one of both.
-In this way, as previously explained, only in the second problem the actions can be perfomed in parallel.
+In this way, as previously explained, only in the second problem the actions can be performed in parallel.
 
-The planner managed to find a plan of duration 34 seconds for for the first problem and a plan of
+The planner managed to find a plan of duration 34 seconds for the first problem and a plan of
 duration 24 seconds for the second one.
 As can be seen in the second plan, some actions are performed simultaneously as desired.
 
@@ -64,4 +64,4 @@ These commands are reported in a file located in the directory of \textit{Proble
 Executing the \texttt{POPF} planner on this problem, it managed to find the plan shown in Figure 
 \ref{fig:plan} of duration 42 seconds.
 This plan is then executed by \texttt{PlanSys2} within the \texttt{ROS2} framework. 
-Figure \ref{fig:execution} shows part of the execution of the plan and the messages sended by the action nodes.
+Figure \ref{fig:execution} shows part of the execution of the plan and the messages sent by the action nodes.
